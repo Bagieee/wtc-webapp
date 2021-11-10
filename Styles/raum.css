@@ -31,44 +31,11 @@ body {
     margin: auto;
 }
 
-#raum_aus {
-    height: 100%;
-    width: 100%;
-    text-align: center;
+#raum_id {
+    text-decoration: underline;
     padding-top: 20px;
-    font-size: 17pt;
     font-family: 'Mohave', sans-serif;
+    padding-left: 350px;
+    font-size: 18pt;
 }
-
-#raum > a {
-    text-align: center;
-    padding-left: auto;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
-
-#raum {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    padding-left: auto;
-    padding-top: 250px;
-    font-size: 35pt;
-    font-family: 'Mohave', sans-serif;
-}
-
-.raum_e {
-    padding-right: 230px;
-    padding-bottom: 150px;
-    padding-left: 230px;
-    padding-top: 150px;
-    border-style: solid;
-    margin-right: 30px;
-}
-
-
-
-
 
