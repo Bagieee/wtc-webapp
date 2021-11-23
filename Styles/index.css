@@ -71,6 +71,7 @@ body {
     text-align: center;
     padding-left: auto;
     padding-top: 17%;
+    padding-bottom: 17%;
     font-size: 35pt;
     font-family: 'Mohave', sans-serif;
 }
@@ -87,7 +88,5 @@ a {
     text-decoration: none;
     color: black;
 }
-
-
 
 

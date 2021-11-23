@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>DEMO - WorkstationToolCheck</title>
+        <link href="Styles/qrcode.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>  
+    </head>
+    <body>
+        <div id="container">
+        
+        <div id="titel">
+            <a href="index.html"><h1>WTC - DEMO</h1></a>  
+        </div>
+        
+        <form id="eingabe_div">
+            <input type="text" placeholder="Raumname" id="in_a" class="in_aa">
+            <input type="text" placeholder="Tischnummer" id="in_b" class="in_aa">
+        </form>
+        
+        <button class="btn_a" onclick="generateCode()">QR-CODE GENERIEREN</button>
+
+        <div id="qrcode"></div>
+        
+     
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </body>
+
+    <script>
+        function generateCode() {
+            var qrSize = 256;
+
+            $('#qrcode').empty();
+            $('#qrcode').qrcode({
+                width: qrSize,
+                height: qrSize,
+                text: 
+                $('#in_a').val()
+                + "/"
+                + $('#in_b').val()
+                + "/Nulla in lobortis feugiat, nibh felis rhoncus libero, in sollicitudin dolor augue et nunc. Proin cursus tellus at velit molestie varius. Sed condimentum lorem vitae orci pretium, in rhoncus nibh facilisis. In in tortor quis sapien interdum facilisis non sed sem."
+            });
+        }
+    </script>
+
+</html>
