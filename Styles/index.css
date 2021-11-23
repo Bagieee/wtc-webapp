@@ -89,4 +89,7 @@ a {
     color: black;
 }
 
-
+#btn_qr {
+    font-family: 'Mohave', sans-serif;
+    font-size: 20pt;
+}
