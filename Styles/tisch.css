@@ -28,3 +28,13 @@ body {
     width: 100%;
     margin: auto;
 }
+
+#tisch_id {
+    text-decoration: underline;
+    padding-top: 20px;
+    font-family: 'Mohave', sans-serif;
+    padding-left: 20%;
+    font-size: 18pt;
+    padding-right: 60%;
+    margin: auto;
+}
