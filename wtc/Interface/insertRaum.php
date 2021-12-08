@@ -13,5 +13,5 @@ catch(Exception $e)
 {
     echo $e;
 }
-Header("Location: ../dbInsert")
+Header("Location: ../dbInsertRaum.php")
     ?>
