@@ -17,17 +17,19 @@
             <a href="index.html"><h1>WTC - DEMO</h1></a>  
         </div>
         
-        <form id="eingabe_div">
+        <form onload="FormPruefung()" id="eingabe_div">
             <input type="text" placeholder="Raumname" id="in_a" class="in_aa">
             <input type="text" placeholder="Tischnummer" id="in_b" class="in_aa">
         </form>
         
-        <button class="btn_a" onclick="generateCode()">QR-CODE GENERIEREN</button>
+        <button id="gen_btn" class="btn_a" onclick="generateCode()">QR-CODE GENERIEREN</button>
 
         <div id="qrcode"></div>
         
      
-            
+
+        <!-- MUSS NOCH ANGEPASST WERDEN -> FARBE GRÜN UND BLINKEND WENN FORM AUSGEFÜLLT -->
+        <!-- <button id="checkSub_btn"class="btn_a">QR-CODE BESTÄTIGEN UND ABSCHICKEN</button> -->
             
             
             
@@ -53,6 +55,19 @@
                 + "/Nulla in lobortis feugiat, nibh felis rhoncus libero, in sollicitudin dolor augue et nunc. Proin cursus tellus at velit molestie varius. Sed condimentum lorem vitae orci pretium, in rhoncus nibh facilisis. In in tortor quis sapien interdum facilisis non sed sem."
             });
         }
+
+
+        function FormPruefung() {
+        var check = true;
+
+        if (document.getElementById('eingabe_div').value == '') {
+            check = false;
+        }
+
+        if (check) {
+            document.getElementById('gen_btn').disabled = false;
+        }
+    }
     </script>
 
 </html>
