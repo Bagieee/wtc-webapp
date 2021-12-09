@@ -38,3 +38,23 @@ body {
     padding-right: 60%;
     margin: auto;
 }
+
+.in_aa {
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 30%;
+}
+
+#output1 {
+    padding-left: 20%;
+    margin-bottom: 10%;
+}
+
+#log_title {
+    font-family: 'Mohave', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 20%;
+}
+
