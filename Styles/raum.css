@@ -30,6 +30,7 @@ body {
     width: 100%;
     height: 100%;
     margin: auto;
+    padding-bottom: 10%;
 }
 
 #raum_id {
@@ -42,7 +43,7 @@ body {
     margin: auto;
 }
 
-#raum {
+#tische {
     margin: auto;
     height: 100%;
     width: 100%;
@@ -53,19 +54,21 @@ body {
     font-family: 'Mohave', sans-serif;
 }
 
-#raum > a {
+#tische > a {
     text-align: center;
     padding-left: auto;
     text-align: center;
 }
 
-.raum_e {
+.tisch_e {
     padding-right: 7%;
     padding-bottom: 4%;
     padding-left: 7%;
     padding-top: 4%;
     border-style: solid;
     margin-right: 3%;
+    /*background-color: red;*/
+    background-color: green;
 }
 
 a {
