@@ -3,7 +3,7 @@
 Das grobe Konzept für das WorkstationToolCheck System!
 
 
-- Die Funktion -
+## Die Funktion 
 
 Ein System zur Wekrzeugidentifizierung in Werkbänken.
 Es werden Werkzeuge mithilfe einer App identifizierung und automatisch an die Datenbank weitergeleitet.
@@ -11,7 +11,7 @@ Es kann auch ein Manueller Modus genutzt werden, dieser kommt zum Einsatz wenn e
 mit dem Android Betriebssystem besitzt.*
 
 
-- Die Web-App -
+## Die Web-App 
 
 Zudem wird nach der Synchronisierung mit den verschiedenen Tischen die Datenbank immer in Echtzeit aktualisiert, das
 bedeutet das die dazugehörige Web-App (Lehrer Ansicht) auch dauerhaft geupdatet bleibt und die Lehrkräfte
@@ -22,7 +22,7 @@ Die Tische werden für eine bessere Übersicht in der Web-App duch die Farben Ro
 Grün (-> Am gescannten Tisch ist alles in Ordnung) gekennzeichnet.
 
 
-- Die Android App - 
+## Die Android App 
 
 Nachdem die Web-App erfolgreich abgeschlossen ist wird das Konzept für die Android App realisiert.
 Bisher bezieht sich diese auf eine IA-Scan Fähigkeit die Werkzeuge automatisch erkennt und zu fehlerhaften
@@ -34,11 +34,11 @@ gesamte System an keine Anmeldung gekoppelt und ein Schüler der ein IOS Gerät 
 
 
 
-** Weitere Informationen **
+## Weitere Informationen ##
 
 *QR-Code Generierung wurde eingefügt, zudem noch eine Vorlage für die "Tisch" Seite.
 Mithilfe der QR-Code Generierung können Lehrkräfte neue Tische erstellen und diesen auch direkt in der 
-Datenbank hinzufügen.
+Datenbank hinzufügen.*
 
 
 
