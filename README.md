@@ -3,7 +3,7 @@
 Das grobe Konzept für das WorkstationToolCheck System!
 
 
--- Die Funktion --
+- Die Funktion -
 
 Ein System zur Wekrzeugidentifizierung in Werkbänken.
 Es werden Werkzeuge mithilfe einer App identifizierung und automatisch an die Datenbank weitergeleitet.
