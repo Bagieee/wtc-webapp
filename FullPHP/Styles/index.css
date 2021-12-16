@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400&display=swap');
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#titel {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: auto;
+    padding-top: 3%;
+    clear: both;
+    font-size: 30pt;
+    font-family: 'Mohave', sans-serif;
+}
+
+#titel > a {
+    text-decoration: none;
+    color: black;
+}
+
+#container {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+
+#raum_aus {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 17pt;
+    font-family: 'Mohave', sans-serif;
+}
+
+#raum > a {
+    text-align: center;
+    padding-left: auto;
+    text-align: center;
+}
+
+#raum {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: auto;
+    padding-top: 10%;
+    font-size: 35pt;
+    font-family: 'Mohave', sans-serif;
+}
+
+.raum_e {
+    padding-right: 10%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-top: 7%;
+    border-style: solid;
+    margin-right: 3%;
+}
+
+#raum_u {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: auto;
+    padding-top: 17%;
+    padding-bottom: 17%;
+    font-size: 35pt;
+    font-family: 'Mohave', sans-serif;
+}
+
+.raum_ue {
+    padding-right: 10%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-top: 7%;
+    border-style: solid;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#btn_qr {
+    font-family: 'Mohave', sans-serif;
+    font-size: 20pt;
+}

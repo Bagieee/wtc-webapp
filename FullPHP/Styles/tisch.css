@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400&display=swap');
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#titel {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: auto;
+    padding-top: 3%;
+    clear: both;
+    font-size: 30pt;
+    font-family: 'Mohave', sans-serif;
+}
+
+#titel > a {
+    text-decoration: none;
+    color: black;
+}
+
+#container {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+
+#tisch_id {
+    text-decoration: underline;
+    padding-top: 20px;
+    font-family: 'Mohave', sans-serif;
+    padding-left: 20%;
+    font-size: 18pt;
+    padding-right: 60%;
+    margin: auto;
+}
+
+.in_aa {
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 30%;
+}
+
+#output1 {
+    padding-left: 20%;
+    margin-bottom: 10%;
+}
+
+#log_title {
+    font-family: 'Mohave', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 20%;
+}
+
