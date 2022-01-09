@@ -1,46 +1,42 @@
 # ProjektWTC
  
-Das grobe Konzept für das WorkstationToolCheck System!
-
-
 ## Die Funktion 
 
-Ein System zur Wekrzeugidentifizierung in Werkbänken.
-Es werden Werkzeuge mithilfe einer App identifizierung und automatisch an die Datenbank weitergeleitet.
-Es kann auch ein Manueller Modus genutzt werden, dieser kommt zum Einsatz wenn ein Schüler kein Smartphone
-mit dem Android Betriebssystem besitzt.*
-
+<br>
+Es wird ein System realisiert, mithilfe von welchem die Überprüfung der Vollständigkeit der Werkzeuge in den Werkräumen vereinfacht werden soll. <br>
+Mittels einer Smartphone-App können die Schüler angeben, ob die Werkzeuge vollständig sind oder nicht. Auch können hier Kommentare verfasst werden. <br>
+Auf der Web-App werden die gesammelten Daten dann gegliedert dargestellt. <br>
+Die Web-App ist eine reine datenabfrage Platform und wird nicht zur Datenübertragung genutzt.
+<br><br>
 
 ## Die Web-App 
 
+<br>
 Zudem wird nach der Synchronisierung mit den verschiedenen Tischen die Datenbank immer in Echtzeit aktualisiert, das
-bedeutet das die dazugehörige Web-App (Lehrer Ansicht) auch dauerhaft geupdatet bleibt und die Lehrkräfte
-immer bescheid wissen sobald ein Wekrzeug fehlt.
-Ein Scan-Protokoll sowie Kommentare sind in der Web-App auch verfügbar. (Kommentare können auch von einem Schüler abgegeben
-werden, diese sieht der Lehrer dann.)
-Die Tische werden für eine bessere Übersicht in der Web-App duch die Farben Rot (-> Ein Werkzeug fehlt) und 
-Grün (-> Am gescannten Tisch ist alles in Ordnung) gekennzeichnet.
+bedeutet das die dazugehörige Web-App (Lehrer Ansicht) auch dauerhaft auf dem neuesten Stand bleibt. <br>
+Bei der Übersicht der jeweiligen Tische steht ein Überprüfungsprotokoll und ein Kommentarprotokoll zur verfügung, mithilfe von welchen einfach erkannt werden kann was fehlt. <br>
+Beim Überprüfungsprotokoll werden nur die Checks der letzten 14 Tage aufgelistet, da man sonst die Übersicht leicht verliert und die liste zu lang wird. Alle Checks können dann auf einer separaten Seite abgerufen werden.
+In der Raumübersicht werden die Tische jeweils mit einem Roten oder Grünen Rahmen gekennzeichnet, abhängig vom Ergebniss des letzten Checks.
+<br><br>
 
+## Die Smartphone App 
 
-## Die Android App 
+<br>
+Nachdem die Web-App erfolgreich abgeschlossen ist wird das Konzept für die Android App realisiert. <br>
+In der App können die Schüler auswählen, ob sie ein Kommentar verfassen, oder einen Check übermitteln wollen.<br>
+Der dazugehörige Werktisch wird dann über das Scannen eines QR-Codes festgelegt.<br>
+Wenn als Ergebniss des Checks angegeben wird dass etwas fehlt, dann wird nach einer Auflistung der fehlenden Werkzeuge gefragt. <br>
+Bei der Kommentarfunktion kann eine Kommentar übermittelt werden, welches nichtn mit einem Check zu tun hat.<br>
 
-Nachdem die Web-App erfolgreich abgeschlossen ist wird das Konzept für die Android App realisiert.
-Bisher bezieht sich diese auf eine IA-Scan Fähigkeit die Werkzeuge automatisch erkennt und zu fehlerhaften
-Tischen den Schüler verwarnt und diesen Kommentare dazu verfassen lässt. 
-Mit der eingebauten Scan-Funktion können auch die personalisierten QR-Codes gelesen werden, so ist das
-gesamte System an keine Anmeldung gekoppelt und ein Schüler der ein IOS Gerät besitzt ist nicht eingeschränkt.
+__Sowohl bei der Checkfunktion, als auch bei der Kommentarfunktion wird nach dem Namen des Schülers gefragt.__
 
---> Das Genaue Kozept zur App wird noch ausgearbeitet und zu einem späteren Zeitpunkt hier aktualisiert!
-
-
+<br>
 
 ## Weitere Informationen ##
 
-*QR-Code Generierung wurde eingefügt, zudem noch eine Vorlage für die "Tisch" Seite.
-Mithilfe der QR-Code Generierung können Lehrkräfte neue Tische erstellen und diesen auch direkt in der 
-Datenbank hinzufügen.*
+<br>
+Auf der Startseite der Web-App besteht die möglichkeit neue Tische hinzuzufügen oder auch den QR-Code eines Tisches neu auszudrucken, wenn dieser kaputt gehen sollte.
 
+<br><br><br>
 
-
-
-Last ReadMe Update: 15.12.2021
+*Last ReadMe Update: 09.01.2022*
