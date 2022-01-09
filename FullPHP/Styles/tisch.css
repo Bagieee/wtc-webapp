@@ -46,9 +46,45 @@ body {
     padding-right: 30%;
 }
 
+#tablediv {
+    width: 50%;
+    float: left;
+}
+
+
+
+
+#tables {
+    text-align: center;
+    table-layout: fixed;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    align-self: center;
+    width: 95%;
+}
+#tables2 {
+    text-align: center;
+    table-layout: fixed;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    align-self: center;
+    width: 95%;
+}
+
+#backgroundGreen {
+    background-color: lightgreen;
+}
+
+#backgroundRed {
+    background-color: red;
+}
+
 #output1 {
     padding-left: 20%;
     margin-bottom: 10%;
+    padding-right: 20%;
 }
 
 #log_title {

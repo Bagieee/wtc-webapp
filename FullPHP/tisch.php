@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>WTC - WorkstationToolCheck</title>
-        <link href="Styles/tisch.css" rel="stylesheet">
+        <link href="Styles\tisch.css" rel="stylesheet" type="text/css">
 
         <!-- UIKIT und BOOTSTRAP EINBINDUNG -->
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
@@ -18,7 +18,9 @@
         $tischId = $_GET['tischId'];
         $tischNummer = $_GET['tischNummer'];
     ?>
-
+        <div id="titel">
+            <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
+        </div>
 
         <div id="tisch_id">
             <h1>TISCH - <?=$tischNummer?></h1>    
@@ -29,8 +31,8 @@
         </div>
 
         <div id="output1">
-            
-            <table id="in_aa" border="1">
+            <div id="tablediv">
+                <table id="tables">
                     <tr>
                         <th>Datum/Uhrzeit</th>
                         <th>Ergebniss</th>
@@ -42,22 +44,25 @@
                 foreach($stmt->fetchAll() as $row){
                     if ($row['scanErgebniss'] === 1){
                         $ergebniss = "Vollständig";
-                        $farbe = "lightgreen";
+                        $class = "backgroundGreen";
                     }
                     else {
                         $ergebniss = "Unvollständig";
-                        $farbe = "red";
+                        $class = "backgroundRed";
                     }
-                    echo "<tr style='background-color:".$farbe."'>";
+                    echo "<tr id='".$class."'>";
                     echo "<td>".$row['scanTime']."</td>";
                     echo "<td>".$ergebniss."</td>";
                     echo "</tr>";
                 }
 
                 ?>
-            </table>
-            <table id="in_aa" border="1">
-            <tr>
+                
+                </table>
+            </div>
+            <div id="tablediv">
+                <table id="tables2">
+                <tr>
                 <th>Datum/Uhrzeit</th>
                 <th>Name</th>
                 <th>Kommentar</th>
@@ -76,8 +81,9 @@
                 }
 
                 ?>
-            </table>
-        </div>
+                </table>
+            </div>
+            </div>
 
         
             

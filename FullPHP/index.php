@@ -15,7 +15,7 @@
         <div id="container">
         
         <div id="titel">
-            <a href="index.html"><h1>WTC - WorkstationToolCheck</h1></a>  
+            <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
         </div>
 
         <div id=raum_aus>

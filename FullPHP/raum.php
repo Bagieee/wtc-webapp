@@ -6,12 +6,14 @@
     <link href="Styles/raum.css" rel="stylesheet">
     </head>
     <body>
+    <div id="titel">
+            <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
+        </div>
 <?php
 
     require_once("dbCon.php");
-    echo "<div id='titel'>";
-    echo "<h1> WTC - WorkstationToolCheck </1>";
-    echo "</div>";
+   
+    
 
     $tischRaumId = $_GET['raumid'];
     $counter = 1;
