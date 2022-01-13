@@ -33,9 +33,9 @@
         </div>
         
         <div id="btn_qr">
-            <a class="qrbtn" href="qrcode-gen.php">QR-CODE WIEDERHERSTELLEN  </a>
+            <a class="qrbtn" href="qrcode-gen.php">*QR-CODE WIEDERHERSTELLEN*  </a>
             |
-            <a class="qrbtnn" href="qrcode-new-gen.php">  NEUEN QR-CODE ERSTELLEN</a>
+            <a class="qrbtn" href="qrcode-new-gen.php">  *NEUEN QR-CODE ERSTELLEN*</a>
         </div>
      
         
