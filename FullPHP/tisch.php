@@ -27,7 +27,7 @@
         </div>     
             
         <div id="log_title">
-            <h1>Scan-Protokoll & Informationen</h1>
+            <h1>Scan-Protokoll</h1>
         </div>
 
         <div id="output1">
@@ -60,7 +60,12 @@
                 
                 </table>
             </div>
-            <div id="tablediv">
+
+
+            <div id="tabledivv">
+
+            <h1>Informationen</h1>
+
                 <table id="tables2">
                 <tr>
                 <th>Datum/Uhrzeit</th>

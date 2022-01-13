@@ -47,8 +47,18 @@ body {
 }
 
 #tablediv {
-    width: 50%;
+    width: 100%;
     float: left;
+
+    font-family: 'Mohave', sans-serif;
+    margin-bottom: 6%;
+}
+
+#tabledivv {
+    width: 100%;
+    float: left;
+
+    font-family: 'Mohave', sans-serif;
 }
 
 
@@ -90,7 +100,8 @@ body {
 #log_title {
     font-family: 'Mohave', sans-serif;
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     padding-left: 20%;
 }
+
 
