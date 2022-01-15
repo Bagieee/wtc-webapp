@@ -38,6 +38,16 @@ body {
     font-family: 'Mohave', sans-serif;
 }
 
+#tisch_aus {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+    margin-bottom: 8%;
+    font-size: 14pt;
+    font-family: 'Mohave', sans-serif;
+}
+
 #raum > a {
     text-align: center;
     padding-left: auto;

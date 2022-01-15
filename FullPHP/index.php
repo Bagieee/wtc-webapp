@@ -27,15 +27,20 @@
             <a class="raum_e" href="raum.php?raumid=2" style="margin-right: 0%;">Werkraum #2</a>
         </div>
         
-        
         <div id="raum_u">
             <a class="raum_e" href="raum.php?raumid=3" style="margin-right: 0%;">Werkraum #3</a>    
         </div>
         
+        <div id=tisch_aus>
+            <h1>Zusammenfassung der Werkbänke</h1>
+        </div>
+
+
+
         <div id="btn_qr">
-            <a class="qrbtn" href="qrcode-gen.php">*QR-CODE WIEDERHERSTELLEN*  </a>
-            |
-            <a class="qrbtn" href="qrcode-new-gen.php">  *NEUEN QR-CODE ERSTELLEN*</a>
+            <a class="qrbtn" href="qrcode-gen.php">QR-CODE WIEDERHERSTELLEN </a>
+            ||
+            <a class="qrbtn" href="qrcode-new-gen.php"> NEUEN QR-CODE ERSTELLEN</a>
         </div>
      
         
