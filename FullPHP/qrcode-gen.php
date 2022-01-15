@@ -21,12 +21,68 @@
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
         </div>
         
-        <form id="eingabe_div">
-            <input type="text" placeholder="Raumname" id="in_a" class="in_aa">
-            <input type="text" placeholder="Tischnummer" id="in_b" class="in_aa">
+        <form action="../FullPHP/qrcode-gen.php" id="eingabe_div" method="get">
+            
+
+
+        Raum: 
+        <select name="raumid" id="raumid" methode="get" onchange="this.form.submit();">
+        <?php
+          $raumid = 0;
+          if(isset($_GET['raumid'])){
+            $raumid = $_GET['raumid'];
+            echo '<option value="0" disabled hidden >Raum auswählen</option>';
+          }
+          else {
+            echo '<option value="0" disabled hidden selected>Raum auswählen</option>';
+          }
+          require_once("dbCon.php");
+          $stmt = $pdo->prepare("SELECT * FROM tblraum");
+          $stmt->execute();    
+          foreach ($stmt->fetchAll() as $row){
+            echo "<option value='".$row['raumId']."'>" . $row['raumBezeichnung'] ."</option>";
+          }
+        ?>
+        </select>
+        <script type="text/javascript">
+         document.getElementById('raumid').value = "<?php echo $_GET['raumid'];?>";
+        </script>
+        
+        </form>
+        <form action="../FullPHP/qrcode-gen.php" id="eingabe_div" method="get">
+
+            Tisch:
+            <select name="tischid" id="tischid" methode="get" onchange="this.form.submit();">
+            <?php
+                if(!isset($_GET['raumid'])){
+                    echo "<option> Bitte wählen sie zuerst einen Raum aus. </option>";
+                }
+                else{
+                    $tischid = 0;
+                    if(isset($_GET['raumid'])){
+                      $raumid = $_GET['raumid'];
+                      echo '<option value="0" disabled hidden>Tisch auswählen</option>';
+                    }
+                    else {
+                      echo '<option value="0" disabled hidden selected>Tisch auswählen</option>';
+                    }
+                    require_once("dbCon.php");
+                    $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ?");
+                    $stmt->execute([$raumid]);    
+                    foreach ($stmt->fetchAll() as $row){
+                      echo "<option value='".$row['tischId']."'>" . $row['tischNummer'] ."</option>";
+                    }
+                }
+                
+
+            ?>
+        
+        </select>
+        <script type="text/javascript">
+         document.getElementById('tischid').value = "<?php echo $_GET['tischid'];?>";
+        </script>
         </form>
         
-        <button id="gen_btn" class="btn_a" onclick="generateCode()">QR-CODE GENERIEREN</button>
 
         <div id="qrcode"></div>
         
