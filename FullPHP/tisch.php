@@ -35,7 +35,9 @@
                 <table id="tables">
                     <tr>
                         <th>Datum/Uhrzeit</th>
+                        <th>Name</th>
                         <th>Ergebniss</th>
+                        <th>Kommentar</th>
                     </tr>
                 <?php
 
@@ -52,7 +54,9 @@
                     }
                     echo "<tr id='".$class."'>";
                     echo "<td>".$row['scanTime']."</td>";
+                    echo "<td>".$row['scanName']."</td>";
                     echo "<td>".$ergebniss."</td>";
+                    echo "<td>".$row['scanKommentar']."</td>";
                     echo "</tr>";
                 }
 

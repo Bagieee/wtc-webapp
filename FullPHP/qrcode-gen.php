@@ -48,11 +48,9 @@
          document.getElementById('raumid').value = "<?php echo $_GET['raumid'];?>";
         </script>
         
-        </form>
-        <form action="../FullPHP/qrcode-gen.php" id="eingabe_div" method="get">
 
             Tisch:
-            <select name="tischid" id="tischid" methode="get" onchange="this.form.submit();">
+            <select <?=(isset($_GET['raumid'])?'name="tischid"':'');?>) id="tischid" methode="get" onchange="this.form.submit();">
             <?php
                 if(!isset($_GET['raumid'])){
                     echo "<option> Bitte wählen sie zuerst einen Raum aus. </option>";
@@ -70,19 +68,19 @@
                     $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ?");
                     $stmt->execute([$raumid]);    
                     foreach ($stmt->fetchAll() as $row){
-                      echo "<option value='".$row['tischId']."'>" . $row['tischNummer'] ."</option>";
+                      echo "<option value='".$row['tischId']."'> Tisch " . $row['tischNummer'] ."</option>";
                     }
                 }
                 
 
             ?>
-        
         </select>
         <script type="text/javascript">
          document.getElementById('tischid').value = "<?php echo $_GET['tischid'];?>";
         </script>
         </form>
         
+        <button id="gen_btn" class="btn_a" <?=(isset($_GET['tischid']) && isset($_GET['raumid']))?'':'disabled';?> onclick="generateCode()">QR-CODE GENERIEREN</button>
 
         <div id="qrcode"></div>
         
@@ -109,15 +107,15 @@
                 width: qrSize,
                 height: qrSize,
                 text: 
-                $('#in_a').val()
+                $('#raumid').val()
                 + "/"
-                + $('#in_b').val()
+                + $('#tischid').val()
                 
             });
         }
 
 
-        function FormPruefung() {
+        /*function FormPruefung() {
         var check = true;
 
         if (document.getElementById('eingabe_div').value == '') {
@@ -127,7 +125,7 @@
         if (check) {
             document.getElementById('gen_btn').disabled = false;
         }
-    }
+    }*/
     </script>
 
 </html>
