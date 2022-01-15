@@ -21,12 +21,23 @@
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
         </div>
         
-        <form id="eingabe_div">
-            <input type="text" placeholder="Raumname" id="in_a" class="in_aa">
-            <input type="text" placeholder="Tischnummer" id="in_b" class="in_aa">
+        <form id="eingabe_div" action="addedTable.php" method="get">
+        Raum: 
+      <select name="raumId" id="raumId">
+      <?php
+          require_once("dbCon.php");
+          $stmt = $pdo->prepare("SELECT * FROM tblraum");
+          $stmt->execute();      
+          foreach ($stmt->fetchAll() as $row){
+            echo "<option value='" .$row['raumId'] . "'>" . $row['raumBezeichnung'] . "</option>";
+          }
+      ?>
+            <input type="text" placeholder="Tischnummer" id="tischNummer" name="tischNummer" class="in_aa">
+
+            <input type="submit" value="Tisch hinzufügen">
         </form>
         
-        <button id="gen_btn" class="btn_a" onclick="generateCode()">QR-CODE GENERIEREN</button>
+        
 
         <div id="qrcode"></div>
         
@@ -52,9 +63,9 @@
                 width: qrSize,
                 height: qrSize,
                 text: 
-                $('#in_a').val()
+                $('#raumId').val()
                 + "/"
-                + $('#in_b').val()
+                + $('#tischNummer').val()
                 
             });
         }

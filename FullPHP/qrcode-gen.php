@@ -50,7 +50,7 @@
         
 
             Tisch:
-            <select <?=(isset($_GET['raumid'])?'name="tischid"':'');?>) id="tischid" methode="get" onchange="this.form.submit();">
+            <select <?=(isset($_GET['raumid'])?'name="tischid"':'');?>) id="tischid" onchange="this.form.submit();">
             <?php
                 if(!isset($_GET['raumid'])){
                     echo "<option> Bitte wählen sie zuerst einen Raum aus. </option>";
