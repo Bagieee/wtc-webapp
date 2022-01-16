@@ -10,5 +10,5 @@
     $stmt->execute([$raumid, $tischnummer]);
 
 
-    Header("Location: addTable.php?")
+    Header("Location: addTable.php?raumId=$raumid&tischNummer=$tischnummer")
 ?>

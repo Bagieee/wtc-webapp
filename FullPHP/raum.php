@@ -26,10 +26,27 @@
     $stmt = $pdo->prepare("SELECT * FROM tblTisch where tischRaumId = ? ORDER BY tischNummer");
     $stmt->execute([$tischRaumId]);      
     foreach ($stmt->fetchAll() as $row){
+        
+        $stmtErgebniss = $pdo->prepare("SELECT scanErgebniss FROM tblScan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
+        $stmtErgebniss->execute([$row['tischId']]);
+        if ($stmtErgebniss->rowCount() > 0){
+            foreach($stmtErgebniss->fetchAll() as $borderErgebniss);{
+                if ($borderErgebniss['scanErgebniss'] == 0){
+                    $border = 'style="border-color:red ! important;"';
+                }
+                else if ($borderErgebniss['scanErgebniss'] == 1){
+                    $border = 'style="border-color:green ! important;"';
+                }
+                              
+            }
+        }
+        else {
+            $border = '';
+        }
         if ($counter === 1){
             echo "<div id='tische'>";
         }
-        echo "<a class='tisch_e' href='tisch.php?tischId=".$row['tischId']."&tischNummer=".$row['tischNummer']."'> Tisch -"  .$row['tischNummer'] . "</a>";
+        echo "<a class='tisch_e' href='tisch.php?tischId=".$row['tischId']."&tischNummer=".$row['tischNummer']."'$border> Tisch -"  .$row['tischNummer'] . "</a>";
         if ($counter === 3){
             echo "</div>";
         }
