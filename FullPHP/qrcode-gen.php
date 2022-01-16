@@ -114,18 +114,6 @@
             });
         }
 
-
-        /*function FormPruefung() {
-        var check = true;
-
-        if (document.getElementById('eingabe_div').value == '') {
-            check = false;
-        }
-
-        if (check) {
-            document.getElementById('gen_btn').disabled = false;
-        }
-    }*/
     </script>
 
 </html>

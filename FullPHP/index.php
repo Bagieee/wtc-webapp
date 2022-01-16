@@ -40,7 +40,7 @@
         <div id="btn_qr">
             <a class="qrbtn" href="qrcode-gen.php">QR-CODE WIEDERHERSTELLEN </a>
             ||
-            <a class="qrbtn" href="addTable.php"> NEUEN QR-CODE ERSTELLEN</a>
+            <a class="qrbtn" href="addTable.php"> NEUEN TISCH HINZUFÜGEN</a>
         </div>
      
         

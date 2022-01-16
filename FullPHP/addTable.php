@@ -21,6 +21,8 @@
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
         </div>
         
+        
+        
         <form id="eingabe_div" action="addedTable.php" method="get">
         Raum: 
       <select name="raumId" id="raumId">
@@ -32,56 +34,20 @@
             echo "<option value='" .$row['raumId'] . "'>" . $row['raumBezeichnung'] . "</option>";
           }
       ?>
-            <input type="text" placeholder="Tischnummer" id="tischNummer" name="tischNummer" class="in_aa">
+            <input type="text" placeholder="Tischnummer" id="tischNummer" <?php
+            $value = '';
+            if (isset($_GET['tischNummer'])){
+                $value = $_GET['tischNummer'];
+                echo "value=\"".$value."\"";
+            }
+            
+            
+            ?>
+            name="tischNummer" class="in_aa">
+            <br>
 
-            <input type="submit" value="Tisch hinzufügen">
+
+            <input type="submit" value="Tisch hinzufügen"/>
         </form>
         
         
-
-        <div id="qrcode"></div>
-        
-     
-
-      
-            
-            
-            
-            
-            
-            
-            
-        </div>
-    </body>
-
-    <script>
-        function generateCode() {
-            var qrSize = 256;
-
-            $('#qrcode').empty();
-            $('#qrcode').qrcode({
-                width: qrSize,
-                height: qrSize,
-                text: 
-                $('#raumId').val()
-                + "/"
-                + $('#tischNummer').val()
-                
-            });
-        }
-
-
-        function FormPruefung() {
-        var check = true;
-
-        if (document.getElementById('eingabe_div').value == '') {
-            check = false;
-        }
-
-        if (check) {
-            document.getElementById('gen_btn').disabled = false;
-        }
-    }
-    </script>
-
-</html>
