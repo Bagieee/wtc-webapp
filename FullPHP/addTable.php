@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <title>WTC - WorkstationToolCheck</title>
         <link href="Styles/qrcode.css" rel="stylesheet">
+        <link rel="icon" href="C:\xampp\htdocs\ProjektWTC\favicon.png">
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>  
