@@ -33,7 +33,7 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
-    
+
     padding-top: 1%;
     font-size: 17pt;
     font-family: 'Mohave', sans-serif;
@@ -64,6 +64,7 @@ body {
     padding-top: 10%;
     font-size: 35pt;
     font-family: 'Mohave', sans-serif;
+    border-radius: 20px;
 }
 
 #raum_z {
@@ -75,6 +76,7 @@ body {
     padding-top: 5%;
     font-size: 35pt;
     font-family: 'Mohave', sans-serif;
+    border-radius: 20px;
 }
 
 .raum_e {
@@ -84,6 +86,7 @@ body {
     padding-top: 7%;
     border-style: solid;
     margin-right: 3%;
+    border-radius: 20px;
 }
 
 #raum_u {
@@ -96,6 +99,7 @@ body {
     padding-bottom: 17%;
     font-size: 35pt;
     font-family: 'Mohave', sans-serif;
+    border-radius: 20px;
 }
 
 
