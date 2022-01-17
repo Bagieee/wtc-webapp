@@ -114,8 +114,13 @@ a {
     padding-top: 15%;
 }
 
-.qrbtnn {
+#btn_qrr {
+    font-family: 'Mohave', sans-serif;
+    font-size: 20pt;
+    padding-top: 2%;
+}
+
+.qrbtn {
     font-family: 'Mohave', sans-serif;
     font-size: 22pt;
-    
 }
