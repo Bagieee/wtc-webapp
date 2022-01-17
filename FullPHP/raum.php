@@ -36,19 +36,19 @@
         if ($stmtErgebniss->rowCount() > 0){
             foreach($stmtErgebniss->fetchAll() as $borderErgebniss);{
                 if ($borderErgebniss['scanErgebniss'] == 0){
-                    $border = 'style="border-color:red ! important;"';
-                    $fill = 'style="background-color:red ! important;"';
+                    $border = 'style="border-color:#FA502C ! important; background-color:#FA502C ! important;""';
+                    
                 }
                 else if ($borderErgebniss['scanErgebniss'] == 1){
-                    $border = 'style="border-color:green ! important;"';
-                    $fill = 'style="background-color:green ! important;"';
+                    $border = 'style="border-color:green ! important; background-color:green ! important;"';
+                    
                 }
                               
             }
         }
         else {
             $border = '';
-            $fill = '';
+            
         }
         if ($counter === 1){
             echo "<div id='tische'>";
