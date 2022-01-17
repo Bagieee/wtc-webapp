@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>WTC - WorkstationToolCheck</title>
         <link href="Styles/index.css" rel="stylesheet">
-        <link rel="icon" href="C:\xampp\htdocs\ProjektWTC\favicon.png">
+        <link rel="icon" href="../favicon.png">
         
         <!-- UIKIT und BOOTSTRAP EINBINDUNG -->
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
