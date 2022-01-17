@@ -38,7 +38,7 @@
             echo "<option value='" .$row['raumId'] . "'>" . $row['raumBezeichnung'] . "</option>";
           }
       ?>
-            <input type="text" placeholder="Nummer eingeben" id="tischNummer" <?php
+            <input type="text" placeholder="Tischnummer eingeben" id="tischNummer" <?php
             $value = '';
             if (isset($_GET['tischNummer'])){
                 $value = $_GET['tischNummer'];
