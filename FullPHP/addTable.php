@@ -20,8 +20,6 @@
             <h1>Raum & Tischnummer angeben</h1>
         </div>
         
-        
-        
             <form id="eingabe_div" action="addedTable.php" method="get">
             <select name="raumId" id="raumId">
       
@@ -32,21 +30,21 @@
           foreach ($stmt->fetchAll() as $row){
             echo "<option value='" .$row['raumId'] . "'>" . $row['raumBezeichnung'] . "</option>";
           }
-      ?>
-            <input type="text" placeholder="Tischnummer eingeben" id="tischNummer" <?php
+        ?>
+            <input type="text" placeholder="Tischnummer eingeben" id="tischNummer" 
+            
+            <?php
             $value = '';
             if (isset($_GET['tischNummer'])){
                 $value = $_GET['tischNummer'];
                 echo "value=\"".$value."\"";
             }
-            
-            
             ?>
             name="tischNummer" class="in_aa">
             <br>
 
-
             <input type="submit" value="Tisch hinzufügen" id="btn_add"/>
+
         </form>
     </body>
 </html>
