@@ -35,6 +35,12 @@
             <h1>Zusammenfassung der Werkbänke</h1>
         </div>
 
+        <div id="raum_z">
+            <a class="raum_e" href="erg.php" style="margin-right: 0%;">Alle Ergebnisse anzeigen</a>    
+        </div>
+
+
+
 
 
         <div id="btn_qr">

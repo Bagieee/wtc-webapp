@@ -33,6 +33,7 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
+    
     padding-top: 1%;
     font-size: 17pt;
     font-family: 'Mohave', sans-serif;
@@ -65,6 +66,17 @@ body {
     font-family: 'Mohave', sans-serif;
 }
 
+#raum_z {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: auto;
+    padding-top: 5%;
+    font-size: 35pt;
+    font-family: 'Mohave', sans-serif;
+}
+
 .raum_e {
     padding-right: 10%;
     padding-bottom: 7%;
@@ -86,13 +98,6 @@ body {
     font-family: 'Mohave', sans-serif;
 }
 
-.raum_ue {
-    padding-right: 10%;
-    padding-bottom: 7%;
-    padding-left: 10%;
-    padding-top: 7%;
-    border-style: solid;
-}
 
 a {
     text-decoration: none;
@@ -102,6 +107,7 @@ a {
 #btn_qr {
     font-family: 'Mohave', sans-serif;
     font-size: 20pt;
+    padding-top: 15%;
 }
 
 .qrbtnn {
