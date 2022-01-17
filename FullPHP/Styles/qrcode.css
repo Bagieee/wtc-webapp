@@ -77,15 +77,20 @@ body {
 }
 
 .btn_a {
-    padding-left: auto;
     text-align: center;
     font-family: 'Mohave', sans-serif;
-    font-size: 20pt;
+    font-size: 15pt;
+    margin-top: 6%;
+
+    padding-bottom: 0.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 0.5%;
 }
 
 #qrcode {
     margin: auto;
-    padding-top: 3%;
+    padding-top: 5%;
     margin-bottom: 10%;
 }
 
@@ -94,3 +99,17 @@ body {
     margin-bottom: 4%;
 }
 
+#tischid {
+    padding-bottom: 0.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 0.5%;
+}
+
+#raumid {
+    padding-bottom: 0.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 0.5%;
+    margin-right: 3%;
+}

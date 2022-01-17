@@ -23,7 +23,9 @@
         
         <form action="../FullPHP/qrcode-gen.php" id="eingabe_div" method="get">
             
-
+        <div id=add_title>
+            <h1>QR-Code Wiederherstellung</h1>
+        </div>
 
         Raum: 
         <select name="raumid" id="raumid" methode="get" onchange="this.form.submit();">
