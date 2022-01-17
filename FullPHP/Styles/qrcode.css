@@ -30,13 +30,44 @@ body {
     text-align: center;
 }
 
+#add_title {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+    padding-top: 1%;
+    padding-bottom: 5%;
+    font-size: 17pt;
+    font-family: 'Mohave', sans-serif;
+}
 
+#title {
+    font-size: 6pt;
+    font-family: 'Mohave', sans-serif;
+}
 
+#tischNummer {
+    margin-left: 3%;
+    padding-right: 3%;
+}
+
+#raumId {
+    padding-right: 1%;
+}
 
 
 .qrbtn {
     font-family: 'Mohave', sans-serif;
     font-size: 20pt;
+}
+
+#btn_add {
+    padding-bottom: 1%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    font-family: 'Mohave', sans-serif;
+    font-size: 15pt;
 }
 
 .btn_a {

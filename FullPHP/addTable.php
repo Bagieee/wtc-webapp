@@ -21,11 +21,15 @@
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
         </div>
         
+        <div id=add_title>
+            <h1>Raum & Tischnummer angeben</h1>
+        </div>
         
         
-        <form id="eingabe_div" action="addedTable.php" method="get">
-        Raum: 
-      <select name="raumId" id="raumId">
+        
+            <form id="eingabe_div" action="addedTable.php" method="get">
+            <select name="raumId" id="raumId">
+      
       <?php
           require_once("dbCon.php");
           $stmt = $pdo->prepare("SELECT * FROM tblraum");
@@ -34,7 +38,7 @@
             echo "<option value='" .$row['raumId'] . "'>" . $row['raumBezeichnung'] . "</option>";
           }
       ?>
-            <input type="text" placeholder="Tischnummer" id="tischNummer" <?php
+            <input type="text" placeholder="Nummer eingeben" id="tischNummer" <?php
             $value = '';
             if (isset($_GET['tischNummer'])){
                 $value = $_GET['tischNummer'];
@@ -47,7 +51,9 @@
             <br>
 
 
-            <input type="submit" value="Tisch hinzufügen"/>
+            <input type="submit" value="Tisch hinzufügen" id="btn_add"/>
         </form>
-        
+    </body>
+</html>
+
         
