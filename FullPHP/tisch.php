@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>WTC - WorkstationToolCheck</title>
         <link href="Styles\tisch.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../favicon.png">
+        <link rel="icon" href="favicon.png">
 
         <!-- UIKIT und BOOTSTRAP EINBINDUNG -->
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
