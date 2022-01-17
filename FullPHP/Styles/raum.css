@@ -43,6 +43,20 @@ body {
     margin: auto;
 }
 
+#tisch_aus {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+    padding-top: 1%;
+    font-size: 17pt;
+    font-family: 'Mohave', sans-serif;
+}
+
+#tisch_aus > h1 {
+    margin-bottom: 0%;
+} 
+
 #tische {
     margin: auto;
     height: 100%;
@@ -67,11 +81,13 @@ body {
     padding-top: 4%;
     border-style: solid;
     margin-right: 3%;
-    /*background-color: red;*/
-
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+#placeholder {
+    padding-top: 10%;
 }

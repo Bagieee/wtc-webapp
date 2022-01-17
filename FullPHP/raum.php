@@ -14,7 +14,11 @@
     <body>
     <div id="titel">
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
-        </div>
+    </div>
+
+    <div id=tisch_aus>
+        <h1>Tisch auswählen</h1>
+    </div>
 <?php
 
     require_once("dbCon.php");
@@ -33,20 +37,23 @@
             foreach($stmtErgebniss->fetchAll() as $borderErgebniss);{
                 if ($borderErgebniss['scanErgebniss'] == 0){
                     $border = 'style="border-color:red ! important;"';
+                    $fill = 'style="background-color:red ! important;"';
                 }
                 else if ($borderErgebniss['scanErgebniss'] == 1){
                     $border = 'style="border-color:green ! important;"';
+                    $fill = 'style="background-color:green ! important;"';
                 }
                               
             }
         }
         else {
             $border = '';
+            $fill = '';
         }
         if ($counter === 1){
             echo "<div id='tische'>";
         }
-        echo "<a class='tisch_e' href='tisch.php?tischId=".$row['tischId']."&tischNummer=".$row['tischNummer']."'$border> Tisch -"  .$row['tischNummer'] . "</a>";
+        echo "<a class='tisch_e' href='tisch.php?tischId=".$row['tischId']."&tischNummer=".$row['tischNummer']."'$border> Tisch - "  .$row['tischNummer'] . "</a>";
         if ($counter === 3){
             echo "</div>";
         }
@@ -58,5 +65,10 @@
     }
     
 ?>
+
+<div id=placeholder>
+
+</div>
+
 </body>
 </html>
