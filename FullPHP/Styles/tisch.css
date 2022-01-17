@@ -29,6 +29,16 @@ body {
     margin: auto;
 }
 
+#tisch_aus {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+    padding-top: 2.5%;
+    font-size: 15pt;
+    font-family: 'Mohave', sans-serif;
+}
+
 #tisch_id {
     text-decoration: underline;
     padding-top: 20px;
