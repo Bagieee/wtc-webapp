@@ -20,11 +20,11 @@
             <h1>Neue Tische hinzufügen</h1>
         </div>
         
-            <form id="eingabe_div" action="addedTable.php" method="get">
+            <form id="eingabe_div" method="post">
             Raum:
             <select name="raumId" id="raumId">
             Tischnummer:
-      <?php
+        <?php
           require_once("dbCon.php");
           $stmt = $pdo->prepare("SELECT * FROM tblraum");
           $stmt->execute();      
@@ -32,23 +32,41 @@
             echo "<option value='" .$row['raumId'] . "'>" . $row['raumBezeichnung'] . "</option>";
           }
         ?>
-            
-            <input type="text" placeholder="Tischnummer eingeben" id="tischNummer" 
-
-            <?php
-            $value = '';
-            if (isset($_GET['tischNummer'])){
-                $value = $_GET['tischNummer'];
-                echo "value=\"".$value."\"";
-            }
-            ?>
-            name="tischNummer" class="in_aa">
+            <input type="number" placeholder="Tischnummer eingeben" id="tischNummer" name="tischNummer" class="in_aa">
             <br>
-            
-
             <input type="submit" value="Tisch hinzufügen" id="btn_add"/>
 
         </form>
+
+        <?php
+
+          if (isset($_POST['tischNummer']) && isset($_POST['raumId'])){
+            $tischNr = $_POST['tischNummer'];
+            $raumEidi = $_POST['raumId'];
+
+            $tableCheck = $pdo->prepare("SELECT * FROM tblTisch where tischRaumId = ? AND tischNummer = ?");
+            $tableCheck->execute([$raumEidi, $tischNr]);
+
+            if ($tableCheck->rowCount() == 0)
+            {
+                try{
+                    $tableSubmit = $pdo->prepare("INSERT into tblTisch (tischRaumId, tischNummer) values ( ? , ? )");
+                    $tableSubmit->execute([$raumEidi, $tischNr]);
+                    echo "Tisch $tischNr wurde bei Raum $raumEidi eingefügt.";
+                }
+                catch (Exception $e)
+                {
+                    print_r($e);
+                }
+                
+            }
+            else {
+                echo "Es gibt bereits einen Tisch mit der Nummer $tischNr beim Raum $raumEidi";
+            }
+          }
+
+
+        ?>
     </body>
 </html>
 
