@@ -39,7 +39,7 @@
                     </tr>
                 <?php
 
-                $stmt = $pdo->prepare("SELECT * FROM tblScan where scanTischId = ? ORDER BY scanTime");
+                $stmt = $pdo->prepare("SELECT * FROM tblScan where scanTischId = ? ORDER BY scanTime DESC");
                 $stmt->execute([$tischId]);
                 foreach($stmt->fetchAll() as $row){
                     if ($row['scanErgebniss'] === 1){
