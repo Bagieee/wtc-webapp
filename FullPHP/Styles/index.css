@@ -87,6 +87,7 @@ body {
     border-style: solid;
     margin-right: 3%;
     border-radius: 20px;
+    text-decoration: underline;
 }
 
 #raum_u {
@@ -111,13 +112,12 @@ a {
 #btn_qr {
     font-family: 'Mohave', sans-serif;
     font-size: 20pt;
-    padding-top: 15%;
 }
 
 #btn_qrr {
     font-family: 'Mohave', sans-serif;
     font-size: 20pt;
-    padding-top: 2%;
+    padding-top: 15%;
 }
 
 .qrbtn {

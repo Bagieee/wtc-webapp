@@ -11,6 +11,10 @@
     </head>
     <body>
         <div id="container">
+
+        <div id="btn_qr">
+            <a class="qrbtn" href="qrcode-gen.php">|| QR-CODE WIEDERHERSTELLEN ||</a>
+        </div>
         
         <div id="titel">
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
@@ -41,9 +45,7 @@
 
 
 
-        <div id="btn_qr">
-            <a class="qrbtn" href="qrcode-gen.php">|| QR-CODE WIEDERHERSTELLEN ||</a>
-        </div>
+        
 
         <div id="btn_qrr">
             <a class="qrbtn" href="addTable.php">|| NEUEN TISCH HINZUFÜGEN ||</a>  
