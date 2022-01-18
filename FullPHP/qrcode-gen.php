@@ -19,7 +19,7 @@
         <form action="../FullPHP/qrcode-gen.php" id="eingabe_div" method="get">
             
         <div id=add_title>
-            <h1>QR-Code Wiederherstellung</h1>
+            <h1>QR-Code Wiederherstellung / Generierung</h1>
         </div>
 
         Raum: 
@@ -83,6 +83,11 @@
 
 
         </div>
+
+        <div id=placeholder>
+    
+        </div>
+
     </body>
 
     <script>
