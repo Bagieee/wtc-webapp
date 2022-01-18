@@ -12,9 +12,7 @@
     <body>
         <div id="container">
 
-        <div id="btn_qr">
-            <a class="qrbtn" href="qrcode-gen.php">|| QR-CODE WIEDERHERSTELLEN ||</a>
-        </div>
+        
         
 
 
@@ -55,6 +53,7 @@
 
         <div id="btn_qrr">
             <a class="qrbtn" href="addTable.php">|| NEUEN TISCH HINZUFÜGEN ||</a>  
+            <a class="qrbtn" href="qrcode-gen.php">|| QR-CODE WIEDERHERSTELLEN ||</a>
         </div>
         
         
