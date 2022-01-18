@@ -34,25 +34,36 @@
 
                 require_once("dbCon.php");
 
-                $stmt = $pdo->prepare("SELECT * FROM tblScan");
-                $stmt->execute();
-                foreach($stmt->fetchAll() as $row){
-                    if ($row['scanErgebniss'] === 1){
-                        $ergebniss = "Vollständig";
-                        $class = "backgroundGreen";
+                $tischIds = $pdo->prepare("SELECT tischId, tischRaumId, tischNummer from tblTisch");
+                $tischIds->execute();
+
+                foreach($tischIds->fetchAll() as $tischId){
+
+                    $scanErgebnisse = $pdo->prepare("SELECT scanName, scanErgebniss, scanKommentar, scanTime from tblScan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
+                    $scanErgebnisse->execute([$tischId['tischId']]);
+                    foreach ($scanErgebnisse->fetchAll() as $row){
+                    
+                        if ($row['scanErgebniss'] === 1){
+                            $ergebniss = "Vollständig";
+                            $class = "backgroundGreen";
+                        }
+                        else {
+                            $ergebniss = "Unvollständig";
+                            $class = "backgroundRed";
+                        }
+                        echo "<tr id='".$class."'>";
+                        echo "<td>" .$row['scanTime']. "</td>";
+                        echo "<td> Raum: " .$tischId['tischRaumId']. " | Tisch: " .$tischId['tischNummer']. "</td>";
+                        echo "<td>" .$row['scanName']. "</td>";
+                        echo "<td>" .$ergebniss. "</td>";
+                        echo "<td>" .$row['scanKommentar']. "</td>";
+                        echo "</tr>";
+                    
                     }
-                    else {
-                        $ergebniss = "Unvollständig";
-                        $class = "backgroundRed";
-                    }
-                    echo "<tr id='".$class."'>";
-                    echo "<td>".$row['scanTime']."</td>";
-                    echo "<td> Raum/Tisch </td>";
-                    echo "<td>".$row['scanName']."</td>";
-                    echo "<td>".$ergebniss."</td>";
-                    echo "<td>".$row['scanKommentar']."</td>";
-                    echo "</tr>";
+
                 }
+
+                
 
                 ?>
                 
