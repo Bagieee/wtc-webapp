@@ -20,8 +20,6 @@
 <?php
 
     require_once("dbCon.php");
-   
-    
 
     $tischRaumId = $_GET['raumid'];
     $counter = 1;

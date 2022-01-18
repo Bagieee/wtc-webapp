@@ -80,8 +80,14 @@ body {
     padding-left: 7%;
     padding-top: 4%;
     border-style: solid;
-    margin-right: 3%;
+    position: relative;
     border-radius: 15px;
+    margin-right: 3%;
+}
+
+* > :nth-child(3n+3) 
+{ 
+    margin-right: 0;
 }
 
 a {

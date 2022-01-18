@@ -12,3 +12,4 @@
 
     Header("Location: addTable.php?raumId=$raumid&tischNummer=$tischnummer")
 ?>
+
