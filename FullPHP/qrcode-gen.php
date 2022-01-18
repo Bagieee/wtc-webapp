@@ -10,7 +10,7 @@
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>  
     </head>
     <body>
-        <div id="container">
+        <div id="container" style="font-family: 'Mohave', sans-serif;">
         
         <div id="titel">
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
