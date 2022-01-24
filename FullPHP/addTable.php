@@ -52,7 +52,7 @@
                 try{
                     $tableSubmit = $pdo->prepare("INSERT into tblTisch (tischRaumId, tischNummer) values ( ? , ? )");
                     $tableSubmit->execute([$raumEidi, $tischNr]);
-                    echo "Tisch $tischNr wurde bei Raum $raumEidi eingefügt.";
+                    echo "<span style='color:#26820a;text-align:center;font-size:15pt;text-decoration:underline;'>Tisch $tischNr wurde bei Raum $raumEidi eingefügt!</span>";
                 }
                 catch (Exception $e)
                 {
@@ -61,12 +61,15 @@
                 
             }
             else {
-                echo "Es gibt bereits einen Tisch mit der Nummer $tischNr beim Raum $raumEidi";
+                echo "<span style='color:#d60f26;text-align:center;font-size:15pt;text-decoration:underline;'>Es gibt bereits einen Tisch mit der Nummer $tischNr beim Raum $raumEidi!</span>";
             }
           }
-
-
         ?>
+
+        <div id=placeholder>
+    
+        </div>
+
     </body>
 </html>
 
