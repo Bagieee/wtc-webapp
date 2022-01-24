@@ -1,4 +1,4 @@
-# ProjektWTC
+# ProjektWTC-Web-App
  
 ## Die Funktion 
 
