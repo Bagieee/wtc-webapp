@@ -56,7 +56,7 @@
                     echo "<td>".$row['scanName']."</td>";
                     echo "<td>".$ergebniss."</td>";
                     echo "<td>".$row['scanKommentar']."</td>";
-                    echo "<td style='background-color:white;'><a id='del_btnT' class='btn_table' href='loeschen.php?id=".$row['scanId']."'>EINTRAG LÖSCHEN</a></td>";
+                    echo "<td style='background-color:white;text-decoration:none;'><a id='del_btnT' class='btn_table' href='loeschen.php?id=".$row['scanId']."'>LÖSCHEN</a></td>";
                     echo "</tr>";
                 }
 
@@ -86,7 +86,7 @@
                     echo "<td>".$row['kommentarTime']."</td>";
                     echo "<td>".$row['kommentarName']."</td>";
                     echo "<td>".$row['kommentarText']."</td>";
-                    echo "<td style='background-color:white;'><button id='del_btnT' class='btn_table'>EINTRAG LÖSCHEN</button></td>";
+                    echo "<td style='background-color:white;text-decoration:none;'><button id='del_btnT' class='btn_table'>LÖSCHEN</button></td>";
                     echo "</tr>";
                 }
 
