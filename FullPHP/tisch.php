@@ -36,6 +36,7 @@
                         <th>Name</th>
                         <th>Ergebniss</th>
                         <th>Kommentar</th>
+                        <th>Einträge löschen?</th>
                     </tr>
                 <?php
 
@@ -55,6 +56,7 @@
                     echo "<td>".$row['scanName']."</td>";
                     echo "<td>".$ergebniss."</td>";
                     echo "<td>".$row['scanKommentar']."</td>";
+                    echo "<td style='background-color:white;'><button id='del_btnT' class='btn_table'>EINTRAG LÖSCHEN</button></td>";
                     echo "</tr>";
                 }
 
@@ -70,9 +72,10 @@
 
                 <table id="tables2">
                 <tr>
-                <th>Datum/Uhrzeit</th>
-                <th>Name</th>
-                <th>Kommentar</th>
+                    <th>Datum/Uhrzeit</th>
+                    <th>Name</th>
+                    <th>Kommentar</th>
+                    <th>Einträge löschen?</th>
                 </tr>
                 <?php
 
@@ -83,7 +86,7 @@
                     echo "<td>".$row['kommentarTime']."</td>";
                     echo "<td>".$row['kommentarName']."</td>";
                     echo "<td>".$row['kommentarText']."</td>";
-                    
+                    echo "<td style='background-color:white;'><button id='del_btnT' class='btn_table'>EINTRAG LÖSCHEN</button></td>";
                     echo "</tr>";
                 }
 
