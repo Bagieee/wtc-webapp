@@ -56,7 +56,7 @@
                     echo "<td>".$row['scanName']."</td>";
                     echo "<td>".$ergebniss."</td>";
                     echo "<td>".$row['scanKommentar']."</td>";
-                    echo "<td style='background-color:white;'><button id='del_btnT' class='btn_table'>EINTRAG LÖSCHEN</button></td>";
+                    echo "<td style='background-color:white;'><a id='del_btnT' class='btn_table' href='loeschen.php?id=".$row['scanId']."'>EINTRAG LÖSCHEN</a></td>";
                     echo "</tr>";
                 }
 
@@ -99,7 +99,7 @@
     
             </div>
 
-            <button id="del_btn" class="btn_d"><span>TISCH LÖSCHEN </span></button>
+            <a id="del_btn" class="btn_d" href="tischLoeschen.php?id=<?php echo $tischId ?>"><span>TISCH LÖSCHEN </span></a>
 
     </body>
 </html>
