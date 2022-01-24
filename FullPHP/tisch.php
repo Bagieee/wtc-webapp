@@ -96,5 +96,7 @@
     
             </div>
 
+            <button id="del_btn" class="btn_d"><span>TISCH LÖSCHEN </span></button>
+
     </body>
 </html>

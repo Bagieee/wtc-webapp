@@ -117,3 +117,53 @@ body {
 #placeholder {
     padding-top: 10%;
 }
+
+#del_btn {
+    text-align: left;
+    font-family: 'Mohave', sans-serif;
+    font-size: 15pt;
+    margin-top: 2%;
+
+    background-color: red;
+    border-color: red;
+    color: white;    
+
+    border-radius: 10px;
+}
+
+.btn_d {
+    transition: all 0.5s;
+    cursor: pointer;
+
+    padding-bottom: 0.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 0.5%;
+}
+
+.btn_d:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn_d:hover span {
+    padding-right: 25px;
+}
+
+.btn_d span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn_d span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
