@@ -80,8 +80,7 @@
         <button id="gen_btn" class="btn_a" <?=(isset($_GET['tischid']) && isset($_GET['raumid']))?'':'disabled';?> onclick="generateCode()">QR-CODE GENERIEREN</button>
 
         <div id="qrcode"></div>
-
-
+        
         </div>
 
         <div id=placeholder>
