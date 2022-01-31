@@ -1,6 +1,5 @@
 <?php
 $PDO = false;
-
 $servername = "localhost";
 $dbname = "wtc";
 $username = "root";
@@ -14,13 +13,8 @@ $dsn = "mysql:host=$servername;dbname=$dbname";
 try {
     $pdo = new \PDO($dsn, $username, $password, $options);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-  
     } catch (PDOException $e) {
         
         return false;
     }
-
-    
-  // set the resulting array to associative
 ?>
