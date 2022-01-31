@@ -17,12 +17,13 @@
     $Querie = new Querie($db);
 
     //Daten Auslesen
-    $data = json_decode(file_get_contents("php://input"));
+    $data = json_decode(file_get_contents("php://input"), true);
+    $data = json_decode($data, true);
 
-    $Querie->name = $data->name;
-    $Querie->tischRaumId = $data->tischRaumId;
-    $Querie->tischNummer = $data->tischNummer;
-    $Querie->kommentar = $data->kommentar;
+    $Querie->name = $data["name"];
+    $Querie->tischRaumId = $data["tischRaumId"];
+    $Querie->tischNummer = $data["tischNummer"];
+    $Querie->kommentar = $data["kommentar"];
 
     if ($Querie->comment()) {
         echo json_encode(array('message' => 'Comment Created'));

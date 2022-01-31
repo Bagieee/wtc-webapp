@@ -17,22 +17,19 @@
     $Querie = new Querie($db);
 
     //Daten Auslesen
-    $data = json_decode(file_get_contents("php://input"));
+    $data = json_decode(file_get_contents("php://input"), true);
+    $data = json_decode($data, true);
 
-    $Querie->name = $data->name;
-    $Querie->tischRaumId = $data->tischRaumId;
-    $Querie->tischNummer = $data->tischNummer;
-    $Querie->ergebniss = $data->ergebniss;
-    $Querie->ergebnissKommentar = $data->ergebnissKommentar;
-
+    $Querie->name = $data["name"];
+    $Querie->tischRaumId = $data["tischRaumId"];
+    $Querie->tischNummer = $data["tischNummer"];
+    $Querie->ergebniss = $data["ergebniss"];
+    $Querie->ergebnissKommentar = $data["ergebnissKommentar"];
+    
     if ($Querie->scanNeg()) {
         echo json_encode(array('message' => 'Scan Created'));
     }
     else {
         echo json_encode(array('message' => 'Scan Not Created'));
     }
-        
-
-
-    
 ?>

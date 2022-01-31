@@ -17,12 +17,14 @@
     $Querie = new Querie($db);
 
     //Daten Auslesen
-    $data = json_decode(file_get_contents("php://input"));
-
-    $Querie->name = $data->name;
-    $Querie->tischRaumId = $data->tischRaumId;
-    $Querie->tischNummer = $data->tischNummer;
-    $Querie->ergebniss = $data->ergebniss;
+    $data = json_decode(file_get_contents("php://input"), true);
+    $data = json_decode($data, true);
+  
+    print_r($data);
+    $Querie->name = $data["name"];
+    $Querie->tischRaumId = $data["tischRaumId"];
+    $Querie->tischNummer = $data["tischNummer"];
+    $Querie->ergebniss = $data["ergebniss"];
 
     if ($Querie->scanPos()) {
         echo json_encode(array('message' => 'Scan Created'));
