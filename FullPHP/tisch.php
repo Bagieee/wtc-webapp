@@ -56,7 +56,7 @@
                     echo "<td>".$row['scanName']."</td>";
                     echo "<td>".$ergebniss."</td>";
                     echo "<td>".$row['scanKommentar']."</td>";
-                    echo "<td style='background-color:white;text-decoration:none;'><a id='del_btnT' class='btn_table' onclick='return confirm('Wollen Sie diesen Eintrag wirklich löschen?');' href='loeschen.php?id=".$row['scanId']."'>Löschen?</a></td>";
+                    echo "<td style='background-color:white;text-decoration:none;'><a id='del_btnT' class='btn_table' href='loeschen.php?id=".$row['scanId']."'>Löschen?</a></td>";
                     echo "</tr>";
                 }
 
@@ -65,7 +65,8 @@
                 </table>
             </div>
 
-
+        </div>
+        <div id="output2">
             <div id="tabledivv">
 
             <h1>Informationen</h1>
@@ -81,22 +82,26 @@
 
                 $stmt = $pdo->prepare("SELECT * FROM tblKommentar where kommentarTischId = ? ORDER BY kommentarTime");
                 $stmt->execute([$tischId]);
+
+                $ComCol = "backgroundBlue";
+
                 foreach($stmt->fetchAll() as $row){
-                    echo "<tr>";
+                    echo "<tr id='".$ComCol."'>";
                     echo "<td>".$row['kommentarTime']."</td>";
                     echo "<td>".$row['kommentarName']."</td>";
                     echo "<td>".$row['kommentarText']."</td>";
-                    echo "<td style='background-color:white;text-decoration:none;'><button id='del_btnT' class='btn_table' onclick='return confirm('Wollen Sie diesen Eintrag wirklich löschen?');'>Löschen?</button></td>";
+                    echo "<td style='background-color:white;text-decoration:none;'><a id='del_btnT' class='btn_table' href='ComLoeschen.php?id=".$row['kommentarId']."'>Löschen?</a></td>";
                     echo "</tr>";
                 }
 
                 ?>
                 </table>
             </div>
-            </div> 
-            
-            <div id=placeholder></div>
 
-            <a id="del_btn" class="btn_d" onclick="return confirm('Wollen Sie den Tisch wirklich löschen?');" href="tischLoeschen.php?id=<?php echo $tischId ?>"><span>TISCH LÖSCHEN </span></a>
-    </body>
+            <div id="delTableBtn">
+                <a id="del_btn" class="btn_d" onclick="return confirm('Wollen Sie den Tisch wirklich löschen?');" href="tischLoeschen.php?id=<?php echo $tischId ?>"><span>TISCH LÖSCHEN </span></a>
+            </div>
+
+        </div>     
+   </body>
 </html>
