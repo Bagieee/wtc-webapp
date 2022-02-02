@@ -15,7 +15,7 @@
     </div>
 
     <div id=tisch_aus>
-        <h1>Tisch auswählen</h1>
+        <h1>Tisch Auswahl- Übersicht</h1>
     </div>
 <?php
 
