@@ -97,6 +97,6 @@
             
             <div id=placeholder></div>
 
-            <a id="del_btn" class="btn_d" onclick="return confirm('Wollen Sie den Tisch wirklich löschen?'); href="tischLoeschen.php?id=<?php echo $tischId ?>"><span>TISCH LÖSCHEN </span></a>
+            <a id="del_btn" class="btn_d" onclick="return confirm('Wollen Sie den Tisch wirklich löschen?');" href="tischLoeschen.php?id=<?php echo $tischId ?>"><span>TISCH LÖSCHEN </span></a>
     </body>
 </html>
