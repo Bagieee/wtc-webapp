@@ -82,14 +82,13 @@ body {
     border-style: solid;
     position: relative;
     border-radius: 15px;
-    margin-right: 3%;
+    margin-right: 4%;
 }
 
 
 
-* > :nth-child(3n+3) 
-{ 
-    margin-right: 0;
+* > :nth-child(3n+3) { 
+    margin-right: 0% !important;
 }
 
 a {
