@@ -117,10 +117,15 @@ a {
 #btn_qrr {
     font-family: 'Mohave', sans-serif;
     font-size: 20pt;
-    padding-top: 15%;
+    margin-top: 15%;
 }
 
 .qrbtn {
     font-family: 'Mohave', sans-serif;
-    font-size: 22pt;
+    font-size: 15pt;
 }
+
+#btn_qrT {
+    color: black;
+}
+
