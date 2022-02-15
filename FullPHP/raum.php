@@ -47,11 +47,11 @@
             echo "<div id='tische'>";
         }
         echo "<a class='tisch_e' href='tisch.php?tischId=".$row['tischId']."&tischNummer=".$row['tischNummer']."'$border> Tisch - "  .$row['tischNummer'] . "</a>";
-        if ($counter === 3){
+        if ($counter === 5){
             echo "</div>";
         }
         $counter += 1;
-        if ($counter === 4){
+        if ($counter === 6){
             $counter = 1;
         }
 
