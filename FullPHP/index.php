@@ -30,13 +30,15 @@
 
         <div id="raum">
             <a class="raum_e" href="raum.php?raumid=1">Werkraum #1</a>  
-            <a class="raum_e" href="raum.php?raumid=2" style="margin-right: 0%;">Werkraum #2</a>
+            <a class="raum_e" href="raum.php?raumid=2">Werkraum #2</a>
+            <a class="raum_e" href="raum.php?raumid=3" style="margin-right: 0%;">Werkraum #3</a> 
         </div>
         
-        <div id="raum_u">
-            <a class="raum_e" href="raum.php?raumid=3" style="margin-right: 0%;">Werkraum #3</a>    
-        </div>
+        <div id=placeholder></div>
         
+        <div id="splitbar">
+            <hr>
+        </div>
 
 
         
@@ -49,13 +51,12 @@
         </div>
 
 
-
-
         <div id="btn_qrr">
-            <button><a class="qrbtn" id="btn_qrT" href="addTable.php">-> NEUEN TISCH HINZUFÜGEN <-</a></button>  
-            <button><a class="qrbtn" id="btn_qrT" href="qrcode-gen.php">-> QR-CODE WIEDERHERSTELLEN <-</a></button>
+            <a class="qrbtn" id="btn_qrT" href="addTable.php">-> NEUEN TISCH HINZUFÜGEN <-</a>  
+            <a class="qrbtn" id="btn_qrT" href="qrcode-gen.php">-> QR-CODE WIEDERHERSTELLEN <-</a>
         </div>
         
+        <div id=placeholder2></div>
         
         </div>  
     </body>
