@@ -16,7 +16,7 @@
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
         </div>
         
-        <form action="../FullPHP/qrcode-gen.php" id="eingabe_div" method="get">
+        <form action="qrcode-gen.php" id="eingabe_div" method="get">
             
         <div id=add_title>
             <h1>QR-Code Wiederherstellung / Generierung</h1>
