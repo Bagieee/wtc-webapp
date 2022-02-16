@@ -168,12 +168,17 @@ body {
 }
 
 .btn_table {
-    padding-bottom: 1%;
+    padding-bottom: 0.5%;
     padding-right: 8%;
     padding-left: 8%;
-    padding-top: 1%;
+    padding-top: 0.5%;
 
     text-decoration: none;
+}
+
+.btn_table:hover {
+    box-shadow: 0px 0px 40px 5px gray;
+    transition: all 0.8s 0s ease;
 }
 
 .btn_d {
