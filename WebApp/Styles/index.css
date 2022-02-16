@@ -123,11 +123,14 @@ a {
 
 .qrbtn:hover {
     box-shadow: 0px 0px 10px gray;
+    transition: all 0.8s 0s ease;
 }
 
 .raum_e:hover {
     box-shadow: 0px 0px 40px 5px gray;
+    transition: all 0.8s 0s ease;
 }
+
 
 #btn_qrT {
     color: black;

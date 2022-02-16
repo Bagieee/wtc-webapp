@@ -52,8 +52,8 @@
 
 
         <div id="btn_qrr">
-            <a class="qrbtn" id="btn_qrT" href="addTable.php">-> NEUEN TISCH HINZUFÜGEN <-</a>  
-            <a class="qrbtn" id="btn_qrT" href="qrcode-gen.php">-> QR-CODE WIEDERHERSTELLEN <-</a>
+            <a class="qrbtn" id="btn_qrT" href="addTable.php">- NEUEN TISCH HINZUFÜGEN -</a>  
+            <a class="qrbtn" id="btn_qrT" href="qrcode-gen.php">- QR-CODE WIEDERHERSTELLEN -</a>
         </div>
         
         <div id=placeholder2></div>
