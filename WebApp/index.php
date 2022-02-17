@@ -22,9 +22,9 @@
 
 
         <div id="raum">
-            <a class="raum_e" href="raum.php?raumid=1">Werkraum #1</a>  
-            <a class="raum_e" href="raum.php?raumid=2">Werkraum #2</a>
-            <a class="raum_e" href="raum.php?raumid=3" style="margin-right: 0%;">Werkraum #3</a> 
+            <a class="raum_e" href="raum.php?raumid=1"><b>Werkraum #1</b></a>  
+            <a class="raum_e" href="raum.php?raumid=2"><b>Werkraum #2</b></a>
+            <a class="raum_e" href="raum.php?raumid=3" style="margin-right: 0%;"><b>Werkraum #3</b></a> 
         </div>
         
         <div id=placeholder></div>
