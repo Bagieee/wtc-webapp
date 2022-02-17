@@ -32,7 +32,7 @@
         if ($stmtErgebniss->rowCount() > 0){
             foreach($stmtErgebniss->fetchAll() as $borderErgebniss);{
                 if ($borderErgebniss['scanErgebniss'] == 0){
-                    $border = 'style="border-color:#FA502C ! important; background-color:#FA502C ! important;"'; 
+                    $border = 'style="border-color:#f17056 ! important; background-color:#f17056 ! important;"'; 
                 }
                 else if ($borderErgebniss['scanErgebniss'] == 1){
                     $border = 'style="border-color:#90EE90 ! important; background-color:#90EE90 ! important;"';

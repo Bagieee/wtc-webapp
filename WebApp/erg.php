@@ -34,7 +34,7 @@
 
                 require_once("dbCon.php");
 
-                $tischIds = $pdo->prepare("SELECT tischId, tischRaumId, tischNummer from tblTisch");
+                $tischIds = $pdo->prepare("SELECT tischId, tischRaumId, tischNummer from tblTisch ORDER BY tischRaumId, tischNummer");
                 $tischIds->execute();
 
                 foreach($tischIds->fetchAll() as $tischId){
