@@ -12,11 +12,6 @@
     <body>
         <div id="container">
 
-        
-        
-
-
-
         <div id="titel">
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
         </div>
@@ -24,8 +19,6 @@
         <div id=raum_aus>
             <h1>Raum auswählen</h1>
         </div>
-               
-        
 
 
         <div id="raum">
@@ -43,7 +36,7 @@
 
         
         <div id=tisch_aus>
-            <h1>Zusammenfassung der Werkbänke</h1>
+            <h1>Zusammenfassung aller Werkbänke</h1>
         </div>
 
         <div id="raum_z">
@@ -52,8 +45,8 @@
 
 
         <div id="btn_qrr">
-            <a class="qrbtn" id="btn_qrT" href="addTable.php">- NEUEN TISCH HINZUFÜGEN -</a>  
-            <a class="qrbtn" id="btn_qrT" href="qrcode-gen.php">- QR-CODE WIEDERHERSTELLEN -</a>
+            <a class="qrbtn" id="btn_qrT" href="addTable.php" style="margin-right: 1%;">~ NEUEN TISCH ZU RAUM HINZUFÜGEN ~</a>  
+            <a class="qrbtn" id="btn_qrT" href="qrcode-gen.php">~ QR-CODE WIEDERHERSTELLEN / GENERIEREN ~</a>
         </div>
         
         <div id=placeholder2></div>
