@@ -11,6 +11,8 @@
     </head>
     <body>
 
+    <div id="ver" class="ver">1.0.0</div>
+
     <?php
         require_once("dbCon.php");
         $tischId = $_GET['tischId'];

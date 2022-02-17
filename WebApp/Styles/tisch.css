@@ -223,4 +223,11 @@ body {
     transition: 0.5s;
 }
 
+#ver {
+    text-align: left;
+    font-size: x-small;
+    font-family: 'Mohave', sans-serif;
+    width: 40px;
+}
+
 

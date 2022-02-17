@@ -146,3 +146,10 @@ a {
 #splitbar {
     width: 100%;
 }
+
+#ver {
+    text-align: left;
+    font-size: x-small;
+    font-family: 'Mohave', sans-serif;
+    width: 40px;
+}

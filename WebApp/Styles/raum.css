@@ -104,3 +104,13 @@ a {
 #placeholder {
     padding-top: 10%;
 }
+
+#ver {
+    text-align: left;
+    font-size: x-small;
+    font-family: 'Mohave', sans-serif;
+    width: 40px;
+
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+}
