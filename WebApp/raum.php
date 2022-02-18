@@ -50,11 +50,11 @@
             echo "<div id='tische'>";
         }
         echo "<a class='tisch_e' href='tisch.php?tischId=".$row['tischId']."&tischNummer=".$row['tischNummer']."'$border> Tisch - "  .$row['tischNummer'] . "</a>";
-        if ($counter === 5){
+        if ($counter === 10){
             echo "</div>";
         }
         $counter += 1;
-        if ($counter === 6){
+        if ($counter === 9){
             $counter = 1;
         }
 
@@ -62,9 +62,7 @@
     
 ?>
 
-<div id=placeholder>
-    
-</div>
+
 
 </body>
 </html>
