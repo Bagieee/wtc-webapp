@@ -79,14 +79,12 @@
         </script>
         </form>
         
-        <div id="popupp" class="pop" onclick="myFunction()">
+        <div id="popupp" class="pop" onclick="popFun()">
           <span class="poptext" id="myPop">Zum Speichern QR-Code <u>rechtsklicken</u> und <b>"speichern unter"</b>!</span>
           <button id="gen_btn" class="btn_a" <?=(isset($_GET['tischid']) && isset($_GET['raumid']))?'':'disabled';?> onclick="generateCode()">QR-CODE GENERIEREN</button>
         </div>
 
         <div id="qrcode"></div>
-        
-        </div>
 
         <div id=placeholder>
     
@@ -110,7 +108,7 @@
             });
         }
 
-      function myFunction() {
+      function popFun() {
         var popup = document.getElementById("myPop");
         popup.classList.toggle("show");
     }

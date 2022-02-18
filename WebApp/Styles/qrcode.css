@@ -82,11 +82,11 @@ body {
     text-align: center;
     font-family: 'Mohave', sans-serif;
     font-size: 15pt;
-    margin-top: 2%;
+    margin-top: 3%;
 
     padding-bottom: 0.5%;
-    padding-right: 1.5%;
-    padding-left: 1.5%;
+    padding-right: 3.5%;
+    padding-left: 3.5%;
     padding-top: 0.5%;
 
     border-radius: 20px;
@@ -140,17 +140,18 @@ body {
 
 .pop .poptext {
     visibility: hidden;
-    width: 210px;
-    background-color: rgb(119, 236, 119);
+    width: 230px;
+    background-color: rgb(70, 231, 48);
     color: rgb(0, 0, 0);
     text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
+    border-radius: 10px;
+    padding: 8px 10px;
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -108px;
+    margin-left: -128px;
+    box-shadow: 0px 0px 10px 2px gray;
 }
 
 #popupp {
