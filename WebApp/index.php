@@ -12,7 +12,11 @@
     <body>
         <div id="container">
         
-        <div id="ver" class="ver">1.0.0</div>
+        <?php 
+            require_once("ver.php")
+        ?>
+
+        <div id="ver" class="ver"><?=$ver?></div>
 
         <div id="titel">
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
