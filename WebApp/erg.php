@@ -36,7 +36,7 @@
 
                 require_once("dbCon.php");
 
-                $tischIds = $pdo->prepare("SELECT tischId, tischRaumId, tischNummer from tblTisch ORDER BY tischRaumId, tischNummer");
+                $tischIds = $pdo->prepare("SELECT tischId, tischRaumId, tischNummer from tblTisch ORDER BY tischRaumId, tischNummer limit 30");
                 $tischIds->execute();
 
                 foreach($tischIds->fetchAll() as $tischId){
@@ -50,7 +50,7 @@
                             $class = "backgroundGreen";
                         }
                         else {
-                            $ergebniss = "Unvollständig";
+                            $ergebniss = "<b>Unvollständig</b>";
                             $class = "backgroundRed";
                         }
                         echo "<tr id='".$class."'>";
@@ -64,9 +64,6 @@
                     }
 
                 }
-
-                
-
                 ?>
                 
                 </table>
