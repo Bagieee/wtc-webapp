@@ -24,7 +24,7 @@
             <h1>QR-Code Wiederherstellung / Generierung</h1>
         </div>
 
-        Raum: 
+        <u>Raum:</u> 
         <select name="raumid" id="raumid" methode="get" onchange="this.form.submit();">
         <?php
           $raumid = 0;
@@ -48,7 +48,7 @@
         </script>
         
 
-            Tisch:
+            <u>Tisch:</u>
             <select <?=(isset($_GET['raumid'])?'name="tischid"':'');?>) id="tischid" onchange="this.form.submit();">
             <?php
                 if(!isset($_GET['raumid'])){
@@ -79,7 +79,10 @@
         </script>
         </form>
         
-        <button id="gen_btn" class="btn_a" <?=(isset($_GET['tischid']) && isset($_GET['raumid']))?'':'disabled';?> onclick="generateCode()">QR-CODE GENERIEREN</button>
+        <div id="popupp" class="pop" onclick="myFunction()">
+          <span class="poptext" id="myPop">Zum Speichern QR-Code <u>rechtsklicken</u> und <b>"speichern unter"</b>!</span>
+          <button id="gen_btn" class="btn_a" <?=(isset($_GET['tischid']) && isset($_GET['raumid']))?'':'disabled';?> onclick="generateCode()">QR-CODE GENERIEREN</button>
+        </div>
 
         <div id="qrcode"></div>
         
@@ -106,6 +109,11 @@
                 
             });
         }
+
+      function myFunction() {
+        var popup = document.getElementById("myPop");
+        popup.classList.toggle("show");
+    }
 
     </script>
 

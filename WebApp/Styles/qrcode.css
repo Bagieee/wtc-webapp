@@ -74,6 +74,8 @@ body {
     padding-top: 0.5%;
     font-family: 'Mohave', sans-serif;
     font-size: 15pt;
+
+    border-radius: 20px;
 }
 
 .btn_a {
@@ -86,6 +88,8 @@ body {
     padding-right: 1.5%;
     padding-left: 1.5%;
     padding-top: 0.5%;
+
+    border-radius: 20px;
 }
 
 #qrcode {
@@ -95,7 +99,6 @@ body {
 }
 
 .in_aa {
-    margin: auto;
     margin-bottom: 4%;
 }
 
@@ -127,4 +130,45 @@ body {
     font-size: x-small;
     font-family: 'Mohave', sans-serif;
     width: 40px;
+}
+
+.pop {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pop .poptext {
+    visibility: hidden;
+    width: 210px;
+    background-color: rgb(119, 236, 119);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -108px;
+}
+
+#popupp {
+      margin-top: 3.5%;
+}
+  
+.pop .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }

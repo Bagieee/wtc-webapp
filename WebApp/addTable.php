@@ -23,10 +23,12 @@
             <h1>Neue Tische hinzufügen</h1>
         </div>
         
-            <form id="eingabe_div" method="post">
-            Raum:
+        <form id="eingabe_div" method="post">
+        <u>Raum:</u>
+            
             <select name="raumId" id="raumId">
-            Tischnummer:
+
+            
         <?php
           require_once("dbCon.php");
           $stmt = $pdo->prepare("SELECT * FROM tblraum");
