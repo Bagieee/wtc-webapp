@@ -68,7 +68,7 @@
                       echo '<option value="0" disabled hidden selected>Tisch auswählen</option>';
                     }
                     require_once("dbCon.php");
-                    $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ?");
+                    $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ? ORDER BY tischNummer");
                     $stmt->execute([$raumid]);    
                     foreach ($stmt->fetchAll() as $row){
                       echo "<option value='".$row['tischNummer']."'> Tisch " . $row['tischNummer'] ."</option>";
