@@ -71,7 +71,7 @@
                     $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ?");
                     $stmt->execute([$raumid]);    
                     foreach ($stmt->fetchAll() as $row){
-                      echo "<option value='".$row['tischId']."'> Tisch " . $row['tischNummer'] ."</option>";
+                      echo "<option value='".$row['tischNummer']."'> Tisch " . $row['tischNummer'] ."</option>";
                     }
                 }
                 
