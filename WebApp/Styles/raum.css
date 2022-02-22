@@ -11,7 +11,7 @@ body {
 #titel {
     height: 100%;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 1%;
     text-align: center;
     padding-left: auto;
     padding-top: 0%;
@@ -114,3 +114,12 @@ a {
     padding-left: 0.5%;
     padding-top: 0.5%;
 }
+
+#raumId {
+    text-align: center;
+    font-family: 'Mohave', sans-serif;
+    font-size: 20pt;
+    text-decoration: underline;
+}
+
+

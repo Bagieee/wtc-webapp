@@ -22,6 +22,10 @@
             <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
     </div>
 
+    <div id="raumIdAus">
+            <a id="raumId"><h3> Werkraum: <?=$_GET['raumid']?> </h3></a>  
+    </div>
+
     <div id=tisch_aus>
         <h1>Tisch Auswahl und Übersicht</h1>
     </div>
@@ -66,7 +70,6 @@
     }
     
 ?>
-
 
 
 </body>
