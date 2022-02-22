@@ -11,7 +11,7 @@ body {
 #titel {
     height: 100%;
     width: 100%;
-    margin-top: 1%;
+    margin: 0 auto;
     text-align: center;
     padding-left: auto;
     padding-top: 0%;

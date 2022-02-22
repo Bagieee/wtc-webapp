@@ -19,7 +19,7 @@
     <div id="ver" class="ver"><?=$ver?></div>
 
     <div id="titel">
-            <a href="index.php"><h1>WTC - WorkstationToolCheck</h1></a>  
+            <a href="index.php"><h1 style="margin-top: 0%;">WTC - WorkstationToolCheck</h1></a>  
     </div>
 
     <div id="raumIdAus">
