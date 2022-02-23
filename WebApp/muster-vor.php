@@ -26,16 +26,16 @@
             <h1>Mustervorlagen aller Räume</h1>
         </div>
 
-        <div id="raumIdAus">
-            <a id="raumId"><h3> Werkraum: 1 </h3></a>  
+        <div id="raumIdAuss">
+            <a id="raumIdd"><h3 style="padding-top: 5%;"> Werkraum: 1 </h3></a>  
         </div>
 
-        <div id="raumIdAus">
-            <a id="raumId"><h3> Werkraum: 2 </h3></a>  
+        <div id="raumIdAuss">
+            <a id="raumIdd"><h3> Werkraum: 2 </h3></a>  
         </div>
 
-        <div id="raumIdAus">
-            <a id="raumId"><h3> Werkraum: 3 </h3></a>  
+        <div id="raumIdAuss">
+            <a id="raumIdd"><h3> Werkraum: 3 </h3></a>  
         </div>
 
         <div id=placeholder>
