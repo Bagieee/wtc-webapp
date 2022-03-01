@@ -76,7 +76,7 @@
 
         <div id=placeholder>
     
-         </div>
+        </div>
 
 </body>
 </html>

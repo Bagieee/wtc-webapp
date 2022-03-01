@@ -114,3 +114,25 @@ a {
     padding-left: 0.5%;
     padding-top: 0.5%;
 }
+
+#raumIdd {
+    text-align: left;
+    font-family: 'Mohave', sans-serif;
+    font-size: 20pt;
+    text-decoration: underline;
+}
+
+#raumId {
+    text-align: center;
+    font-family: 'Mohave', sans-serif;
+    font-size: 20pt;
+    text-decoration: underline;
+}
+
+#raumIdAuss {
+    padding-left: 20%;
+    padding-bottom: 5%;
+    margin: auto;
+}
+
+

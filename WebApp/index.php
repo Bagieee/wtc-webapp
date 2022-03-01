@@ -42,11 +42,12 @@
 
         
         <div id=tisch_aus>
-            <h1>Zusammenfassung aller Werkbänke</h1>
+            <h1>Zusammenfassung aller Werkbänke & Mustervorlagen</h1>
         </div>
 
         <div id="raum_z">
-            <a class="raum_e" href="erg.php" style="margin-right: 0%;">Alle Ergebnisse anzeigen</a>    
+            <a class="raum_e" href="erg.php" style="margin-right: 3%;">Alle Ergebnisse anzeigen</a>    
+            <a class="raum_e" href="muster-vor.php" style="margin-right: 0%;">Mustervorlagen aller Räume</a> 
         </div>
 
 
