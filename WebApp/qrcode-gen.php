@@ -62,10 +62,10 @@
                     $tischid = 0;
                     if(isset($_GET['raumid'])){
                       $raumid = $_GET['raumid'];
-                      echo '<option value="0" disabled hidden>Tisch auswählen</option>';
+                      echo '<option value="0" disabled hidden selected>Tisch auswählen</option>';
                     }
                     else {
-                      echo '<option value="0" disabled hidden selected>Tisch auswählen</option>';
+                      echo '<option value="0" disabled hidden>Tisch auswählen</option>';
                     }
                     require_once("dbCon.php");
                     $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ? ORDER BY tischNummer");
