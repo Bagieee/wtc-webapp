@@ -28,14 +28,29 @@
 
         <div id="raumIdAuss">
             <a id="raumIdd"><h3 style="padding-top: 5%;"> Werkraum: 1 </h3></a>  
+
+            <form action="">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+            </form>
         </div>
 
         <div id="raumIdAuss">
             <a id="raumIdd"><h3> Werkraum: 2 </h3></a>  
+
+            <form action="">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+            </form>
         </div>
 
         <div id="raumIdAuss">
             <a id="raumIdd"><h3> Werkraum: 3 </h3></a>  
+
+            <form action="">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+            </form>
         </div>
 
         <div id=placeholder>
