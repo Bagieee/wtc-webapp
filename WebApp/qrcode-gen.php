@@ -86,6 +86,9 @@
         <div id="popupp" class="pop" onclick="popFun()">
           <span class="poptext" id="myPop">Zum Speichern QR-Code <u>rechtsklicken</u> und <b>"speichern unter"</b>!</span>
           <button id="gen_btn" class="btn_a" <?=(isset($_GET['tischid']) && isset($_GET['raumid']))?'':'disabled';?> onclick="generateCode()">QR-CODE GENERIEREN</button>
+          <a href='qrphp.php?tischRaumId=<?=$_GET["raumid"]?>'>
+            <button id="gen_btn" class="btn_a" <?=(isset($_GET['raumid']))?'':'disabled';?>>GESAMTEN RAUM GENERIEREN</button> 
+          </a>
         </div>
 
         <div id="qrcode"></div>

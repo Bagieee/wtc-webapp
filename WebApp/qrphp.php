@@ -1,7 +1,10 @@
 <?php
 
 require_once('dbCon.php');
-require('fpdf.php');
+require('libs/pdf/fpdf.php');
+
+$tischRaumId = $_GET['tischRaumId'];
+
 class PDF extends FPDF{
 // function Header()
 // {
@@ -25,24 +28,47 @@ class PDF extends FPDF{
 //     $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
 // }
 }
-$x = 0;
-$y;
+
+$x;
+$y = 15;
+$c = 0;
+$count = 0;
 $pdf = new PDF();
 
 $pdf->AddPage();
-    $stmt = $pdo->prepare("SELECT tischNummer, tischRaumId FROM tblTisch");
-    $stmt->execute();      
+$pdf->Line(105,0,105,500);
+    $stmt = $pdo->prepare("SELECT tischNummer, tischRaumId FROM tblTisch where tischRaumId = ? order by tischRaumId, tischNummer");
+    $stmt->execute([$tischRaumId]);      
         foreach ($stmt->fetchAll() as $row){
-            if ($x == 0){
-                $url = urlencode($row["tischRaumId"].'/'.$row["tischNummer"]);
-                $pdf->Image('https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl='.$url.'&choe=UTF-8', 20, NULL, NULL, NULL,'PNG');
-                $y = $pdf->GetY();
-                $x=1;
+            if ($count == 3)
+            {
+                $count = 0;
+                $pdf->AddPage();
+                $y=5;
+                $pdf->Line(105,0,105,500);
             }
-            if ($x == 1){
+            if ($c == 0){
+                
                 $url = urlencode($row["tischRaumId"].'/'.$row["tischNummer"]);
-                $pdf->Image('https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl='.$url.'&choe=UTF-8', 110, $y, NULL, NULL,'PNG');
-                $x=0;
+                $pdf->Image('https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl='.$url, 20, $y, NULL, NULL,'PNG');
+                $pdf->SetY($y+3);
+                $pdf->SetX(30);
+                $pdf->SetFont('Arial','',14);
+                $pdf->Write(5,$row["tischRaumId"].'/'.$row["tischNummer"]);
+                $c=1;    
+            }
+            else if ($c == 1){
+                
+                $url = urlencode($row["tischRaumId"].'/'.$row["tischNummer"]);
+                $pdf->Image('https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl='.$url, 110, $y, NULL, NULL,'PNG');
+                $pdf->SetY($y+3);
+                $pdf->SetX(120);
+                $pdf->SetFont('Arial','',14);
+                $pdf->Write(5,$row["tischRaumId"].'/'.$row["tischNummer"]);
+                $c=0;
+                $count++;
+                $y += 85;
+                $pdf->Line(0,$y-1.5,300,$y-1.5);
             }
             
         }
