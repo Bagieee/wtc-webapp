@@ -175,6 +175,17 @@ body {
 }
 
 
+
+
+
+
+#content {
+    width: 200%;
+    height: 100%;
+
+    background-color: white;
+}
+
 #pic {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -183,11 +194,16 @@ body {
     transform: rotate(90deg);
 
     position: absolute;
-    left: 0px;
-    top: 0px;
+    width: 200%;
+    height: 100%;
+
+    padding-top: 30%;
 }
 
-#content {
-    position: relative;
+.pic {
+    max-width: 1950px;
+    max-height: 1080px;
 }
+
+
 
