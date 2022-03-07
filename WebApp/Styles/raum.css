@@ -135,4 +135,12 @@ a {
     margin: auto;
 }
 
+#pic {
+    padding-top: 1.5%;
+}
+
+.pic {
+    max-width: 1080px;
+    max-height: 720px;
+}
 
