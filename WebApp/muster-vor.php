@@ -35,7 +35,9 @@
                 <input type="submit" name="submit">
             </form>
 
-            <img src="../Bilder/raum1.jpeg"/>
+
+            <img id="pic" class="pic" src="../Bilder/raum1.jpeg" alt="">
+
         </div>
 
 
@@ -46,6 +48,8 @@
                 <input type="file" id="fileToUpload" name="fileToUpload">
                 <input type="submit" name="submit">
             </form>
+
+            <img id="pic" class="pic" src="../Bilder/raum2.jpeg" alt="">
         </div>
 
         
@@ -56,6 +60,8 @@
                 <input type="file" id="fileToUpload" name="fileToUpload">
                 <input type="submit" name="submit">
             </form>
+
+            <img id="pic" class="pic" src="../Bilder/raum3.png" alt="">
         </div>
 
         <div id=placeholder>
