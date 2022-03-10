@@ -30,19 +30,21 @@
         <div id="raumIdAuss">
             <a id="raumIdd"><h3 style="padding-top: 5%;"> Werkraum: 1 </h3></a>  
 
-            <form action="">
-                <input type="file" id="myFile" name="filename">
-                <input type="submit">
+            <form action="picUp.php" method="post" enctype="multipart/form-data">
+                <input type="file" id="fileToUpload" name="files[]" accept="image">
+                <input type="submit" name="submit">
             </form>
+
+            <img src="../Bilder/raum1.jpeg"/>
         </div>
 
 
         <div id="raumIdAuss">
             <a id="raumIdd"><h3> Werkraum: 2 </h3></a>  
 
-            <form action="">
-                <input type="file" id="myFile" name="filename">
-                <input type="submit">
+            <form action="picUp.php" method="post" enctype="multipart/form-data">
+                <input type="file" id="fileToUpload" name="fileToUpload">
+                <input type="submit" name="submit">
             </form>
         </div>
 
@@ -50,9 +52,9 @@
         <div id="raumIdAuss">
             <a id="raumIdd"><h3> Werkraum: 3 </h3></a>  
 
-            <form action="">
-                <input type="file" id="myFile" name="filename">
-                <input type="submit">
+            <form action="picUp.php" method="post" enctype="multipart/form-data">
+                <input type="file" id="fileToUpload" name="fileToUpload">
+                <input type="submit" name="submit">
             </form>
         </div>
 
