@@ -26,10 +26,10 @@
     $Querie->kommentar = $data["kommentar"];
 
     if ($Querie->comment()) {
-        echo json_encode(array('message' => 'Comment Created'));
+        echo '200';
     }
     else {
-        echo json_encode(array('message' => 'Comment Not Created'));
+        echo '500';
     }
         
 
