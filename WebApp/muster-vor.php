@@ -27,42 +27,28 @@
         </div>
 
 
-        <div id="raumIdAuss">
-            <a id="raumIdd"><h3 style="padding-top: 5%;"> Werkraum: 1 </h3></a>  
+        <?php
 
-            <form action="picUp.php" method="post" enctype="multipart/form-data">
-                <input type="file" id="fileToUpload" name="files[]" accept="image">
-                <input type="submit" name="submit">
-            </form>
+            require_once("dbCon.php");
+            
+            $stmt = $pdo->prepare("SELECT * FROM tblpic ORDER BY picRaumId asc");
+            $stmt->execute();
 
+            foreach($stmt as $row)
+            {
+                echo "<div id=\"raumIdAuss\">";
+                echo "<a id=\"raumIdd\"><h3>Werkraum". $row["picRaumId"]."</h3></a>";
+                echo "<form action=\"picUp.php\" method=\"post\" enctype=\"multipart/form-data\">";
+                echo "<input type=\"file\" id=\"fileToUpload\" name=\"files\" accept=\"image\">";
+                echo "<input type=\"submit\" name=\"submit\">";
+                echo "</form>";
 
-            <img id="pic" class="pic" src="../Bilder/raum1.jpeg" alt="">
+                echo "<img id=\"pic\" class=\"pic\" src=\"".$row["picUrl"]."\"/>";
 
-        </div>
+                echo "</div>";
+            }
 
-
-        <div id="raumIdAuss">
-            <a id="raumIdd"><h3> Werkraum: 2 </h3></a>  
-
-            <form action="picUp.php" method="post" enctype="multipart/form-data">
-                <input type="file" id="fileToUpload" name="fileToUpload">
-                <input type="submit" name="submit">
-            </form>
-
-            <img id="pic" class="pic" src="../Bilder/raum2.jpeg" alt="">
-        </div>
-
-        
-        <div id="raumIdAuss">
-            <a id="raumIdd"><h3> Werkraum: 3 </h3></a>  
-
-            <form action="picUp.php" method="post" enctype="multipart/form-data">
-                <input type="file" id="fileToUpload" name="fileToUpload">
-                <input type="submit" name="submit">
-            </form>
-
-            <img id="pic" class="pic" src="../Bilder/raum3.png" alt="">
-        </div>
+        ?>
 
         <div id=placeholder>
     
