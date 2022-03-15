@@ -39,12 +39,10 @@
                 echo "<div id=\"raumIdAuss\">";
                 echo "<a id=\"raumIdd\"><h3>Werkraum". $row["picRaumId"]."</h3></a>";
                 echo "<form action=\"picUp.php\" method=\"post\" enctype=\"multipart/form-data\">";
-                echo "<input type=\"file\" id=\"fileToUpload\" name=\"files\" accept=\"image\">";
+                echo "<input type=\"file\" id=\"files\" name=\"files\">";
                 echo "<input type=\"submit\" name=\"submit\">";
                 echo "</form>";
-
                 echo "<img id=\"pic\" class=\"pic\" src=\"".$row["picUrl"]."\"/>";
-
                 echo "</div>";
             }
 

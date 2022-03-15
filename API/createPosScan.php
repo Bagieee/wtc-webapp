@@ -20,7 +20,6 @@
     $data = json_decode(file_get_contents("php://input"), true);
     $data = json_decode($data, true);
   
-    print_r($data);
     $Querie->name = $data["name"];
     $Querie->tischRaumId = $data["tischRaumId"];
     $Querie->tischNummer = $data["tischNummer"];
@@ -32,8 +31,5 @@
     else {
         echo '500';
     }
-        
-
-
-    
+     
 ?>
