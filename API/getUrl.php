@@ -20,19 +20,12 @@
     $data = json_decode(file_get_contents("php://input"), true);
     $data = json_decode($data, true);
 
-    $Querie->name = $data["name"];
-    $Querie->tischRaumId = $data["tischRaumId"];
-    $Querie->tischNummer = $data["tischNummer"];
-    $Querie->kommentar = $data["kommentar"];
+    $Querie->tischNummer = $data["tischRaumId"];
 
-    if ($Querie->comment()) {
-        echo '200';
+    if ($Querie->url()) {
+    print_r($Querie->url());
     }
     else {
         echo '500';
     }
-        
-
-
-    
 ?>

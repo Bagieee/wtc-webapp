@@ -27,10 +27,10 @@
     $Querie->ergebniss = $data["ergebniss"];
 
     if ($Querie->scanPos()) {
-        echo json_encode(array('message' => 'Scan Created'));
+        echo '200';
     }
     else {
-        echo json_encode(array('message' => 'Scan Not Created'));
+        echo '500';
     }
         
 
