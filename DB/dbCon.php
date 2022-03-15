@@ -1,10 +1,10 @@
 <?php
 $PDO = false;
 
-$servername = "localhost";
+$servername = "toolcheck.dida145600.local";
 $dbname = "wtc";
 $username = "root";
-$password = "";
+$password = "Kennwort0";
 $options = [
     \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
     \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
