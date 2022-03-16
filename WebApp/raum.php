@@ -35,11 +35,11 @@
 
     $tischRaumId = $_GET['raumid'];
     $counter = 1;
-    $stmt = $pdo->prepare("SELECT * FROM tblTisch where tischRaumId = ? ORDER BY tischNummer");
+    $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ? ORDER BY tischNummer");
     $stmt->execute([$tischRaumId]);      
     foreach ($stmt->fetchAll() as $row){
         
-        $stmtErgebniss = $pdo->prepare("SELECT scanErgebniss FROM tblScan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
+        $stmtErgebniss = $pdo->prepare("SELECT scanErgebniss FROM tblscan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
         $stmtErgebniss->execute([$row['tischId']]);
         if ($stmtErgebniss->rowCount() > 0){
             foreach($stmtErgebniss->fetchAll() as $borderErgebniss);{

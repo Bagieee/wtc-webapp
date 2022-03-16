@@ -53,13 +53,13 @@
             $tischNr = $_POST['tischNummer'];
             $raumEidi = $_POST['raumId'];
 
-            $tableCheck = $pdo->prepare("SELECT * FROM tblTisch where tischRaumId = ? AND tischNummer = ?");
+            $tableCheck = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ? AND tischNummer = ?");
             $tableCheck->execute([$raumEidi, $tischNr]);
 
             if ($tableCheck->rowCount() == 0)
             {
                 try{
-                    $tableSubmit = $pdo->prepare("INSERT into tblTisch (tischRaumId, tischNummer) values ( ? , ? )");
+                    $tableSubmit = $pdo->prepare("INSERT into tbltisch (tischRaumId, tischNummer) values ( ? , ? )");
                     $tableSubmit->execute([$raumEidi, $tischNr]);
                     echo "<span style='color:#26820a;text-align:center;font-size:15pt;text-decoration:underline;'>Tisch $tischNr wurde bei Raum $raumEidi eingefügt!</span>";
                 }

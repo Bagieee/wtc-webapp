@@ -46,7 +46,7 @@
                     </tr>
                 <?php
 
-                $stmt = $pdo->prepare("SELECT * FROM tblScan where scanTischId = ? ORDER BY scanTime DESC limit 20");
+                $stmt = $pdo->prepare("SELECT * FROM tblscan where scanTischId = ? ORDER BY scanTime DESC limit 20");
                 $stmt->execute([$tischId]);
                 foreach($stmt->fetchAll() as $row){
                     if ($row['scanErgebniss'] === 1){
@@ -86,7 +86,7 @@
                 </tr>
                 <?php
 
-                $stmt = $pdo->prepare("SELECT * FROM tblKommentar where kommentarTischId = ? ORDER BY kommentarTime limit 20");
+                $stmt = $pdo->prepare("SELECT * FROM tblkommentar where kommentarTischId = ? ORDER BY kommentarTime limit 20");
                 $stmt->execute([$tischId]);
 
                 $ComCol = "backgroundBlue";

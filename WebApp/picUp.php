@@ -39,7 +39,7 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
     
 
-    $stmt = $pdo->prepare("UPDATE tblPic SET picUrl = ? WHERE picRaumId = ? ");
+    $stmt = $pdo->prepare("UPDATE tblpic SET picUrl = ? WHERE picRaumId = ? ");
     $stmt->execute([$dbUrl, $raum]);
 
     $uploadOk = 1;
