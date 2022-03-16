@@ -31,7 +31,18 @@ create Table tblKommentar
     kommentarTime timestamp not null
 );
 
+CREATE TABLE tblpic (
+  picId int(11) NOT NULL,
+  picUrl varchar(100) COLLATE utf8_german2_ci NOT NULL,
+  picRaumId int(11) NOT NULL
+);
+
+
 
 alter table tblTisch add Constraint fk_Tisch_Raum foreign key(tischRaumId) references tblRaum(raumId);
 alter table tblScan add Constraint fk_Scan_Tisch foreign key(scanTischId) references tblTisch(tischId);
 alter table tblKommentar add Constraint fk_Kommentar_Tisch foreign key(kommentarTischId) references tblTisch(tischId);
+
+ALTER TABLE tblpic ADD PRIMARY KEY (picId), ADD KEY fk_Pic_Raum (picRaumId);
+ALTER TABLE tblpic MODIFY picId int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE tblscan ADD CONSTRAINT fk_Scan_Tisch FOREIGN KEY (scanTischId) REFERENCES tbltisch (tischId);
