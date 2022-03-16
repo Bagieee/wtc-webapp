@@ -19,8 +19,9 @@
     //Daten Auslesen
     $data = json_decode(file_get_contents("php://input"), true);
     $data = json_decode($data, true);
+    
+    $Querie->tischRaumId = $data["tischRaumId"];
 
-    $Querie->tischNummer = $data["tischRaumId"];
 
     if ($Querie->url()) {
     print_r($Querie->url());

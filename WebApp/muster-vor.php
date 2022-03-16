@@ -33,19 +33,19 @@
             
             $stmt = $pdo->prepare("SELECT * FROM tblpic ORDER BY picRaumId asc");
             $stmt->execute();
+            $raum = 1;
 
             foreach($stmt as $row)
             {
                 echo "<div id=\"raumIdAuss\">";
-                echo "<a id=\"raumIdd\"><h3>Werkraum". $row["picRaumId"]."</h3></a>";
-                echo "<form action=\"picUp.php\" method=\"post\" enctype=\"multipart/form-data\">";
-                echo "<input type=\"file\" id=\"fileToUpload\" name=\"files\" accept=\"image\">";
+                echo "<a id=\"raumIdd\"><h3>Werkraum ". $row["picRaumId"]."</h3></a>";
+                echo "<form action=\"picUp.php?raumId=$raum\" method=\"post\" enctype=\"multipart/form-data\">";
+                echo "<input type=\"file\" id=\"files\" name=\"files\" required>";
                 echo "<input type=\"submit\" name=\"submit\">";
                 echo "</form>";
-
-                echo "<img id=\"pic\" class=\"pic\" src=\"".$row["picUrl"]."\"/>";
-
+                echo "<img id=\"pic\" class=\"pic\" src=\"".$row["picUrl"].".png\"/>";
                 echo "</div>";
+                $raum++;
             }
 
         ?>

@@ -12,6 +12,7 @@
         public $ergebniss;
         public $ergebnissKommentar;
         public $kommentar;
+        public $tischRaumId;
         
         public function __construct($db) {
             $this->pdo = $db;
@@ -64,9 +65,9 @@
      
 
         public function url() {
-            $this->tischNummer = htmlspecialchars(strip_tags($this->tischNummer));
+            $this->tischRaumId = htmlspecialchars(strip_tags($this->tischRaumId));
             $stmt = $this->pdo->prepare('SELECT picUrl from tblpic where picRaumId = ? LIMIT 1');
-            $stmt->execute([$this->tischNummer]);
+            $stmt->execute([$this->tischRaumId]);
             $url = "";
             foreach ($stmt->fetchAll() as $row)
             {
