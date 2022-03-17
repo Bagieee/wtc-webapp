@@ -6,6 +6,7 @@
         <link href="Styles/raum.css" rel="stylesheet">
         <link rel="icon" href="favicon.png">
         <meta http-equiv="refresh" content="5">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>  
