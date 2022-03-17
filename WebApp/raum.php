@@ -6,7 +6,10 @@
         <link href="Styles/raum.css" rel="stylesheet">
         <link rel="icon" href="favicon.png">
         <meta http-equiv="refresh" content="5">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>  
     </head>
@@ -35,12 +38,12 @@
 
     $tischRaumId = $_GET['raumid'];
     $counter = 1;
-    $stmt = $pdo->prepare("SELECT * FROM tblTisch where tischRaumId = ? ORDER BY tischNummer");
+    $stmt = $pdo->prepare("SELECT * FROM tbltisch where tischRaumId = ? ORDER BY tischNummer");
     $stmt->execute([$tischRaumId]);      
     echo "<div id='tische'>";
     foreach ($stmt->fetchAll() as $row){
         
-        $stmtErgebniss = $pdo->prepare("SELECT scanErgebniss FROM tblScan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
+        $stmtErgebniss = $pdo->prepare("SELECT scanErgebniss FROM tblscan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
         $stmtErgebniss->execute([$row['tischId']]);
         if ($stmtErgebniss->rowCount() > 0){
             foreach($stmtErgebniss->fetchAll() as $borderErgebniss);{

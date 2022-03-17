@@ -41,12 +41,12 @@
 
                 require_once("dbCon.php");
 
-                $tischIds = $pdo->prepare("SELECT tischId, tischRaumId, tischNummer from tblTisch ORDER BY tischRaumId, tischNummer limit 30");
+                $tischIds = $pdo->prepare("SELECT tischId, tischRaumId, tischNummer from tbltisch ORDER BY tischRaumId, tischNummer limit 30");
                 $tischIds->execute();
 
                 foreach($tischIds->fetchAll() as $tischId){
 
-                    $scanErgebnisse = $pdo->prepare("SELECT scanName, scanErgebniss, scanKommentar, scanTime from tblScan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
+                    $scanErgebnisse = $pdo->prepare("SELECT scanName, scanErgebniss, scanKommentar, scanTime from tblscan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
                     $scanErgebnisse->execute([$tischId['tischId']]);
                     foreach ($scanErgebnisse->fetchAll() as $row){
                     
