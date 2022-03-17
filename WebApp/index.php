@@ -5,6 +5,9 @@
         <title>WTC - WorkstationToolCheck</title>
         <link href="Styles/index.css" rel="stylesheet">
         <link rel="icon" href="favicon.png">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>  

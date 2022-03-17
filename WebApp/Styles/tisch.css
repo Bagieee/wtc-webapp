@@ -39,6 +39,7 @@ body {
     padding-bottom: 2%;
     font-size: 15pt;
     font-family: 'Mohave', sans-serif;
+    display: inline-block;
 }
 
 #tisch_id {
@@ -49,6 +50,7 @@ body {
     font-size: 18pt;
     padding-right: 60%;
     margin: auto;
+    display: inline-block;
 }
 
 .in_aa {
@@ -69,7 +71,6 @@ body {
 #tabledivv {
     width: 100%;
     float: left;
-
     font-family: 'Mohave', sans-serif;
 }
 
@@ -84,7 +85,9 @@ body {
     border-style: solid;
     align-self: center;
     width: 95%;
+    display: inline-block;
 }
+
 #tables2 {
     text-align: center;
     table-layout: fixed;
@@ -93,7 +96,7 @@ body {
     border-style: solid;
     align-self: center;
     width: 95%;
-
+    display: inline-block;
     margin-bottom: 10%;
 }
 

@@ -38,6 +38,7 @@ body {
     padding-top: 1%;
     font-size: 17pt;
     font-family: 'Mohave', sans-serif;
+    display: inline-block;
 }
 
 #tisch_aus {
@@ -49,6 +50,8 @@ body {
     margin-top: 3.5%;
     font-size: 14pt;
     font-family: 'Mohave', sans-serif;
+
+    display: inline-block;
 }
 
 #raum > a {
@@ -67,6 +70,8 @@ body {
     font-size: 25pt;
     font-family: 'Mohave', sans-serif;
     border-radius: 20px;
+
+    display: inline-block;
 }
 
 #raum_z {
@@ -100,6 +105,8 @@ a {
 #btn_qr {
     font-family: 'Mohave', sans-serif;
     font-size: 20pt;
+
+    display: inline-block;
 }
 
 #btn_qrr {
@@ -107,6 +114,8 @@ a {
     font-size: 20pt;
     margin-top: 12%;
     text-align: center;
+
+    display: inline-block;
 }
 
 .qrbtn {
