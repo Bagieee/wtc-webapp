@@ -85,7 +85,7 @@ body {
     border-style: solid;
     align-self: center;
     width: 95%;
-    display: inline-block;
+    font-size: 15pt;
 }
 
 #tables2 {
@@ -96,8 +96,8 @@ body {
     border-style: solid;
     align-self: center;
     width: 95%;
-    display: inline-block;
     margin-bottom: 10%;
+    font-size: 15pt;
 }
 
 #backgroundGreen {
