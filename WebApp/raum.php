@@ -6,7 +6,7 @@
         <link href="Styles/raum.css" rel="stylesheet">
         <link rel="icon" href="favicon.png">
         <meta http-equiv="refresh" content="5">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>  
     </head>
@@ -37,6 +37,7 @@
     $counter = 1;
     $stmt = $pdo->prepare("SELECT * FROM tblTisch where tischRaumId = ? ORDER BY tischNummer");
     $stmt->execute([$tischRaumId]);      
+    echo "<div id='tische'>";
     foreach ($stmt->fetchAll() as $row){
         
         $stmtErgebniss = $pdo->prepare("SELECT scanErgebniss FROM tblScan where scanTischId = ? ORDER BY scanTime DESC LIMIT 1");
@@ -55,19 +56,12 @@
         else {
             $border = '';
         }
-        if ($counter === 1){
-            echo "<div id='tische'>";
-        }
+        
         echo "<a class='tisch_e' href='tisch.php?tischId=".$row['tischId']."&tischNummer=".$row['tischNummer']."'$border> Tisch - "  .$row['tischNummer'] . "</a>";
-        if ($counter === 10){
-            echo "</div>";
-        }
-        $counter += 1;
-        if ($counter === 9){
-            $counter = 1;
-        }
+        
 
     }
+    echo "</div>";
     
 ?>
 

@@ -75,6 +75,7 @@ body {
 }
 
 .tisch_e {
+    display: inline-block;
     width: auto;
     height: auto;
     padding-bottom: 1.5%;
@@ -84,7 +85,9 @@ body {
     border-style: solid;
     position: relative;
     border-radius: 15px;
-    margin-right: 1%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    margin-top: 1%;
 }
 
 .tisch_e:hover {
