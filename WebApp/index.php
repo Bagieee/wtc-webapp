@@ -48,9 +48,9 @@
             <h1>Zusammenfassung aller Werkbänke & Mustervorlagen</h1>
         </div>
 
-        <div id="raum_z">
-            <a class="raum_e" href="erg.php" style="margin-right: 3%;">Alle Ergebnisse anzeigen</a>    
-            <a class="raum_e" href="muster-vor.php" style="margin-right: 0%;">Mustervorlagen aller Räume</a> 
+        <div id="raum">
+            <a class="raum_e" href="erg.php">Alle Ergebnisse anzeigen</a>    
+            <a class="raum_e" href="muster-vor.php">Mustervorlagen aller Räume</a> 
         </div>
 
 
