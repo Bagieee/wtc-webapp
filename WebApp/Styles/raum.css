@@ -31,6 +31,9 @@ body {
     height: auto;
     margin: auto;
     padding-bottom: 10%;
+
+    clear: both;
+    display: block;
 }
 
 #raum_id {
@@ -66,6 +69,9 @@ body {
     padding-top: 5%;
     font-size: 25pt;
     font-family: 'Mohave', sans-serif;
+
+    clear: both;
+    display: block;
 }
 
 #tische > a {
