@@ -4,7 +4,7 @@ class Datenbank {
     private $pdo = false;
     private $servername = "localhost";
     private $dbname = "wtc";
-    private $username = "root";
+    private $username = "web";
     private $password = "";
     private $options = [
         \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,

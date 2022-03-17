@@ -7,7 +7,7 @@ $stmt;
 $target_dir = "../Bilder/";
 $file_tmp = $_FILES["files"]["tmp_name"];
 $filename = $_FILES["files"]["name"];
-$dbUrl = "/wtcg/Bilder/". pathinfo($filename, PATHINFO_FILENAME);
+$dbUrl = "Bilder/". pathinfo($filename, PATHINFO_FILENAME);
 $outfile = pathinfo($filename, PATHINFO_FILENAME) . ".png";
 $outfileRotate = pathinfo($filename, PATHINFO_FILENAME) ."Rotate.png";
 $target_file = $target_dir . $outfile;

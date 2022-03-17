@@ -3,8 +3,8 @@ $PDO = false;
 
 $servername = "toolcheck.dida145600.local";
 $dbname = "wtc";
-$username = "root";
-$password = "Kennwort0";
+$username = "web";
+$password = "";
 $options = [
     \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
     \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
