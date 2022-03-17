@@ -2,7 +2,7 @@
 $PDO = false;
 $servername = "localhost";
 $dbname = "wtc";
-$username = "root";
+$username = "web";
 $password = "";
 $options = [
     \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
