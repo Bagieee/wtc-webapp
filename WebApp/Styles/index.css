@@ -46,7 +46,6 @@ body {
     width: 100%;
     text-align: center;
     
-    margin-bottom: 8%;
     margin-top: 3.5%;
     font-size: 14pt;
     font-family: 'Mohave', sans-serif;
@@ -66,7 +65,7 @@ body {
     width: 100%;
     text-align: center;
     padding-left: auto;
-    padding-top: 10%;
+    padding-top: 4%;
     font-size: 25pt;
     font-family: 'Mohave', sans-serif;
     border-radius: 20px;
@@ -95,7 +94,7 @@ body {
     border-style: solid;
     margin-right: 1%;
     margin-left: 1%;
-    margin-top: 2%;
+    margin-top: 1%;
     border-radius: 20px;
     text-decoration: underline;
 }
@@ -115,10 +114,8 @@ a {
 #btn_qrr {
     font-family: 'Mohave', sans-serif;
     font-size: 20pt;
-    margin-top: 12%;
+    margin-top: 7%;
     text-align: center;
-
-    display: inline-block;
 }
 
 .qrbtn {
